@@ -1,2 +1,2 @@
-# eTram.github.io
+# eTram
 [eTram](https://eventbasedvision.github.io)
