@@ -4,13 +4,11 @@ This project contains the source code for the [eTraM website](https://eventbased
 # Cite
 If you find eTraM useful for your work please cite:
 ```
-@misc{verma2024etram,
-    title={eTraM: Event-based Traffic Monitoring Dataset}, 
-    author={Aayush Atul Verma and Bharatesh Chakravarthi and Arpitsinh Vaghela and Hua Wei and Yezhou Yang},
-    year={2024},
-    eprint={2403.19976},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+@article{verma2024etram,
+  title={eTraM: Event-based Traffic Monitoring Dataset},
+  author={Verma, Aayush Atul and Chakravarthi, Bharatesh and Vaghela, Arpitsinh and Wei, Hua and Yang, Yezhou},
+  journal={arXiv preprint arXiv:2403.19976},
+  year={2024}
 }
 ```
 
