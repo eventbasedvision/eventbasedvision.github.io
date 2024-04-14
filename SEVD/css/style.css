@@ -1,0 +1,240 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #777;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.nav-links {
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-family: inherit;
+    font-size: 1.2rem;
+}
+
+.nav-links:hover {
+    text-decoration: none;
+    color: red;
+    /* Color change on hover */
+}
+
+.home {
+    position: relative;
+    background-image: url("./../images/cover-fused-2.png");
+    width: 100vw;
+    height: 83vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home-heading {
+    color: white;
+    font-weight: 900;
+    font-size: 4.5rem;
+    font-style: italic;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-caption {
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.author-block {
+    letter-spacing: 0.8px;
+}
+
+section {
+    margin: 3rem 0;
+}
+
+.author-block {
+    color: white;
+    font-size: 1rem;
+    display: inline;
+}
+
+.author-block a {
+    text-decoration: none;
+    color: white;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.actions {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.actions li {
+    margin-right: 3rem;
+}
+
+.actions li:last-child {
+    margin-right: 0;
+}
+
+.actions a {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.actions a:hover {
+    border-color: #cf352e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.actions i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.citation {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.sensor-suite {
+    display: inline-block;
+    transform: rotate(90deg);
+    scale: 0.9;
+}
+
+.sensor-modalities {
+    padding: 40px 0 0 0;
+}
+
+.diversity {
+    margin: 20px 0 40px 0;
+}
+
+.diversity-options {
+    padding-bottom: 8px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.toggle-section {
+    padding-bottom: 10px;
+    margin: 0 30px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s;
+}
+
+.toggle-section:hover {
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+
+.scenes,
+.weather,
+.lighting,
+.continuous-shift {
+    margin: 15px 0;
+}
+
+.scenes .row,
+.weather .row,
+.lighting .row,
+.continuous-shift .row {
+    padding: 5px 5px;
+}
+
+.scenes .col,
+.weather .col,
+.lighting .col,
+.continuous-shift .col {
+    padding: 0 5px;
+}
+
+.scenes p,
+.weather p,
+.lighting p,
+.continuous-shift p {
+    font-size: .8rem;
+}
+
+.table-container p {
+    font-size: .8rem;
+}
+
+.table-container {
+    margin: 40px 0;
+}
+
+.bounding-boxes {
+    margin: 10px 0;
+}
+
+.footer {
+    padding: 30px 30px 20px 30px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+}
