@@ -1,6 +1,6 @@
 # eTram
 
-[eTram](https://eventbasedvision.github.io)
+[eTram](https://eventbasedvision.github.io/eTraM)
 
 # SEVD
 
