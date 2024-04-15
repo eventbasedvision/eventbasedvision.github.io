@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEVD</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+
+    <link href="./vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg static-top">
+        <div class="container">
+            <a class="nav-links" aria-current="page" href="#abstract">
+                <em>SEVD</em>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-links" aria-current="page" href="#abstract">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-links" aria-current="page" href="#abstract">Home</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-links" aria-current="page" href="#links">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="home" class="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="home-heading">SEVD</h1>
+                    <p class="home-caption">A Synthetic Event-based Vision Dataset for Ego and Fixed Traffic
+                        Perception</p>
+                    <div class="publication-authors">
+                        <p class="author-block">
+                            <a href="https://github.com/aayush-v">Manideep Reddy Aliminati*</a>,
+                        </p>
+                        <p class="author-block">
+                            <a href="https://chakravarthi589.github.io">Bharatesh Chakravarthi*</a>,
+                        </p>
+                        <p class="author-block">
+                            <a href="https://github.com/aayush-v">Aayush Atul Verma</a>,
+                        </p>
+                        <p class="author-block">
+                            <a href="https://github.com/arpitvaghela">Arpitsinh Vaghela</a>,
+                        </p>
+                        <p class="author-block">
+                            <a href="https://www.public.asu.edu/~hwei27/">Hua Wei</a>,
+                        </p>
+                        <p class="author-block">
+                            <a href="https://search.asu.edu/profile/2182101">Xuesong Zhou</a>,
+                        </p>
+                        <p class="author-block">
+                            <a href="https://yezhouyang.engineering.asu.edu">Yezhou Yang</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="links" class="links">
+        <div class="container text-center">
+            <ul class="actions">
+                <li>
+                    <a href="https://github.com/eventbasedvision/SEVD" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        Github
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-file-pdf-o" aria-hidden="true" target="_blank"></i>
+                        Paper (CVPR W 24)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOhlegSlpzW78DsPSqNCDdfg7IVXsbcKD-BgBnbj_YdjojQg/viewform?usp=sf_link"
+                        target="_blank">
+                        <i class="fa fa-database" aria-hidden="true"></i>
+                        Dataset
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="video" id="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <iframe width="800" height="450" src="https://www.youtube.com/embed/MjX3z-6n3iA?si=GOvq9TG_fYOAbu3d"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="abstract" id="abstract">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">Overview</h2>
+                    <p>Recently, event-based vision sensors have gained attention for autonomous driving applications,
+                        as conventional RGB cameras face limitations in handling challenging dynamic conditions.
+                        However, the availability of real-world and synthetic event-based vision datasets remains
+                        limited. In response to this gap, we present SEVD, a first-of-its-kind multi-view ego and fixed
+                        perception synthetic event-based dataset using multiple dynamic vision sensors within the CARLA
+                        simulator. Data sequences are recorded across diverse lighting (noon, nighttime, twilight) and
+                        weather conditions (clear, cloudy, wet, rainy, foggy) with domain
+                        shifts (discrete and continuous). SEVD spans urban, suburban, rural, and highway scenes
+                        featuring various classes of objects (car, truck, van, bicycle, motorcycle, and pedestrian).
+                        Alongside event data, SEVD includes RGB imagery, depth maps, optical flow, semantic, and
+                        instance segmentation, facilitating a comprehensive understanding of the
+                        scene. Furthermore, we evaluate the dataset using state-of-the-art event-based (RED, RVT) and
+                        frame-based (YOLOv8) methods for traffic participant detection tasks and provide baseline
+                        benchmarks for assessment. Additionally, we conduct experiments to assess the synthetic
+                        event-based dataset's generalization capabilities. The dataset is available at
+                        <a href="https://eventbasedvision.github.io/SEVD">https://eventbasedvision.github.io/SEVD</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bibliography">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2 class="text-center">Bibliography</h2>
+                    <div class="bibtex">
+                        <p>
+                            The SEVD Dataset is accessible to both academic and non-academic entities for
+                            research-related activities. We request that if you utilize our dataset, you acknowledge our
+                            contribution by citing our paper as follows:
+                        </p>
+                        <pre class="citation">
+@article{verma2024etram,
+title = { eTraM: Event - based Traffic Monitoring Dataset },
+author = { Verma, Aayush Atul and Chakravarthi, Bharatesh and Vaghela, Arpitsinh and Wei, Hua and Yang, Yezhou },
+journal = { arXiv preprint arXiv: 2403.19976 },
+year = { 2024}
+}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="characteristics">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">What does SEVD Provide ?</h2>
+                    <ul>
+                        <li>A multi-view (360°) synthetic event-based dataset comprising 27 hr of fixed and 31 hr of ego
+                            perception data,
+                            with over 9M bounding boxes, recorded across diverse conditions and varying parameters.</li>
+                        <li>Establishing benchmark baselines for 2D detection using state-of-the-art event-based and
+                            frame-based
+                            architectures on <i>SEVD</i> across different driving and fixed traffic monitoring scenarios
+                            to assess the
+                            efficacy of the dataset.</li>
+                        <li>A quantitative and qualitative evaluation of synthetic event-based detector's generalization
+                            capabilities on
+                            real-world data.</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="data-collection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">Data Collection</h2>
+                    <ul>
+                        <li>Our sensor suite comprises an array of strategically positioned sensors of DVS cameras
+                            complemented by,
+                            RGB, depth, optical flow, semantic, instance sensors, GNSS and IMU.</li>
+                    </ul>
+                    <div class="container" style="display: block;">
+                        <div class="row">
+                            <div class="col">
+                                <img class="sensor-suite" src="./images/sensor-suite.jpg" style="max-width: 100%;">
+                            </div>
+                            <div class="col">
+                                <img class="sensor-modalities" src="./images/all-modalities.png"
+                                    style="max-width: 100%; ">
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li>We leverage CARLA simulator's robust data generation pipeline to record traffic data
+                            across
+                            diverse scenes, illumination, weather conditions, and varying traffic densities. Data
+                            sequences are generated under discrete environmental weather conditions, with
+                            continuously shifting conditions for enhanced realism.</li>
+                        <div class="diversity text-center">
+                            <div class="diversity-options">
+                                <span class="toggle-section" data-target="scenes">Scenes</span>
+                                <span class="toggle-section" data-target="weather">Weather</span>
+                                <span class="toggle-section" data-target="lighting">Lighting</span>
+                                <span class="toggle-section" data-target="continuous-shift">Continuous Shift</span>
+                            </div>
+                            <div class="container scenes" style="display: block;">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="./images/maps/11-1.png" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./images/maps/12-1.png" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./images/maps/13-1.png" style="max-width: 100%;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="./images/maps/14-1.png" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./images/maps/15-1.png" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./images/maps/16-1.png" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./images/maps/17-1.png" style="max-width: 100%;">
+                                    </div>
+                                </div>
+                                <p class="text-center">SEVD has scenes ranging from Urban, Suburban, Roundabout,
+                                    Intersections, Highways, Underpass/overpass, Rural.
+                                </p>
+                            </div>
+                            <div class="container weather" style="display: none;">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="./images/weather/10-1.png" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./images/weather/11-1.png" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./images/weather/12-1.png" style="max-width: 100%;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="./images/weather/13-1.png" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./images/weather/14-1.png" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./images/weather/15-1.png" style="max-width: 100%;">
+                                    </div>
+                                </div>
+                                <p class="text-center">SEVD has weather conditions ranging from Clear, Cloudy, Wet, Soft
+                                    Rainy, Hard Rainy and Foggy.
+                                </p>
+                            </div>
+                            <div class="container lighting" style="display: none;">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="./images/lighting/1.png" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./images/lighting/2.png" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./images/lighting/3.png" style="max-width: 100%;">
+                                    </div>
+                                </div>
+                                <p class="text-center">Noon, Twilight and Night lighting conditions.
+                                </p>
+                            </div>
+                            <div class="container continuous-shift" style="display: none;">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="./images/shift/5650.png" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./images/shift/5700.png" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./images/shift/5750.png" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./images/shift/5800.png" style="max-width: 100%;">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./images/shift/5850.png" style="max-width: 100%;">
+                                    </div>
+                                </div>
+                                <p class="text-center">The above images illustrate a continuous shift from <em>Clear
+                                        Noon</em> to
+                                    <em>Clear
+                                        Night</em>.
+                                </p>
+                            </div>
+                        </div>
+                        <li>SEVD comprises extensive annotations, including:</li>
+                        <ul>
+                            <li>2D and 3D bounding boxes for six categories:</li>
+                            <ul>
+                                <li>Car</li>
+                                <li>Truck</li>
+                                <li>Bus</li>
+                                <li>Bicycle</li>
+                                <li>Motorcycle</li>
+                                <li>Pedestrian</li>
+                            </ul>
+                            <li>Totaling approximately 9 million bounding boxes.</li>
+                        </ul>
+
+                        <div class="container bounding-boxes" style="display: block;">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="./images/bounding-boxes/fixed.png" style="max-width: 100%;">
+                                </div>
+                                <div class="col">
+                                    <img src="./images/bounding-boxes/ego.png" style="max-width: 100%; ">
+                                </div>
+                            </div>
+                        </div>
+
+                        <li>Custom data generation code is provided at <a
+                                href="https://github.com/eventbasedvision/SEVD">https://github.com/eventbasedvision/SEVD</a>.
+                        </li>
+                    </ul>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experiments">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">Experiments</h2>
+                    <p>
+                        To establish baselines, we train state-of-the-art event-based detectors, including Recurrent
+                        Vision Transformers (RVT), Recurrent Event-camera Detector (RED). Additionally, we evaluate
+                        frame-based (RGB) data using the You Only Look Once (YOLOv8) detector. Additionally, we conduct
+                        qualitative and quantitative evaluations for event-based detectors using real-world event data,
+                        offering insights into their generalization performance in dynamic scenarios. <em>For all
+                            experiments, the evaluation metrics are based on <a
+                                href="https://yanfengliux.medium.com/the-confusing-metrics-of-ap-and-map-for-object-detection-3113ba0386ef">Mean
+                                Average
+                                Precision (mAP) at a 50% Intersection over Union (IoU) threshold.</a></em>
+                    </p>
+                    <div class="table-container">
+                        <table class="table table-bordered text-center"
+                            style="max-width: 100%; display: block; overflow: scroll;">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Map Type</th>
+                                    <th rowspan="2">Lighting Conditions</th>
+                                    <th colspan="4">RED (EVENT)</th>
+                                    <th colspan="4">RVT (EVENT)</th>
+                                    <th colspan="4">YOLOv8 (RGB)</th>
+                                </tr>
+                                <tr>
+                                    <th>Car</th>
+                                    <th>Pedestrian</th>
+                                    <th>Motorcycle</th>
+                                    <th>All Classes</th>
+                                    <th>Car</th>
+                                    <th>Pedestrian</th>
+                                    <th>Motorcycle</th>
+                                    <th>All Classes</th>
+                                    <th>Car</th>
+                                    <th>Pedestrian</th>
+                                    <th>Motorcycle</th>
+                                    <th>All Classes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Urban</td>
+                                    <td rowspan="5" style="vertical-align: middle;">Noon</td>
+                                    <td>0.524</td>
+                                    <td>0.124</td>
+                                    <td>0.095</td>
+                                    <td>0.167</td>
+                                    <td>0.598</td>
+                                    <td>0.149</td>
+                                    <td>0.268</td>
+                                    <td>0.444</td>
+                                    <td>0.961</td>
+                                    <td>0.63</td>
+                                    <td>0.806</td>
+                                    <td>0.881</td>
+                                </tr>
+                                <tr>
+                                    <td>Suburban</td>
+                                    <td>0.375</td>
+                                    <td>0.057</td>
+                                    <td>0.430</td>
+                                    <td>0.239</td>
+                                    <td>0.523</td>
+                                    <td>0.338</td>
+                                    <td>0.714</td>
+                                    <td>0.618</td>
+                                    <td>0.887</td>
+                                    <td>0.376</td>
+                                    <td>0.815</td>
+                                    <td>0.744</td>
+                                </tr>
+                                <tr>
+                                    <td>Rural</td>
+                                    <td>0.418</td>
+                                    <td>0.068</td>
+                                    <td>0.226</td>
+                                    <td>0.143</td>
+                                    <td>0.488</td>
+                                    <td>0.473</td>
+                                    <td>0.396</td>
+                                    <td>0.471</td>
+                                    <td>0.878</td>
+                                    <td>0.46</td>
+                                    <td>0.584</td>
+                                    <td>0.552</td>
+                                </tr>
+                                <tr>
+                                    <td>Highways</td>
+                                    <td>0.248</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.101</td>
+                                    <td>0.500</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.485</td>
+                                    <td>0.881</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.870</td>
+                                </tr>
+                                <tr>
+                                    <td>All</td>
+                                    <td>0.348</td>
+                                    <td>0.098</td>
+                                    <td>0.270</td>
+                                    <td>0.159</td>
+                                    <td>0.514</td>
+                                    <td>0.243</td>
+                                    <td>0.565</td>
+                                    <td>0.515</td>
+                                    <td>0.892</td>
+                                    <td>0.536</td>
+                                    <td>0.744</td>
+                                    <td>0.753</td>
+                                </tr>
+                                <tr>
+                                    <td>Urban</td>
+                                    <td rowspan="5" style="vertical-align: middle;">Night</td>
+                                    <td>0.524</td>
+                                    <td>0.124</td>
+                                    <td>0.095</td>
+                                    <td>0.167</td>
+                                    <td>0.598</td>
+                                    <td>0.149</td>
+                                    <td>0.268</td>
+                                    <td>0.444</td>
+                                    <td>0.961</td>
+                                    <td>0.63</td>
+                                    <td>0.806</td>
+                                    <td>0.881</td>
+                                </tr>
+                                <tr>
+                                    <td>Suburban</td>
+                                    <td>0.375</td>
+                                    <td>0.057</td>
+                                    <td>0.430</td>
+                                    <td>0.239</td>
+                                    <td>0.523</td>
+                                    <td>0.338</td>
+                                    <td>0.714</td>
+                                    <td>0.618</td>
+                                    <td>0.887</td>
+                                    <td>0.376</td>
+                                    <td>0.815</td>
+                                    <td>0.744</td>
+                                </tr>
+                                <tr>
+                                    <td>Rural</td>
+                                    <td>0.418</td>
+                                    <td>0.068</td>
+                                    <td>0.226</td>
+                                    <td>0.143</td>
+                                    <td>0.488</td>
+                                    <td>0.473</td>
+                                    <td>0.396</td>
+                                    <td>0.471</td>
+                                    <td>0.878</td>
+                                    <td>0.46</td>
+                                    <td>0.584</td>
+                                    <td>0.552</td>
+                                </tr>
+                                <tr>
+                                    <td>Highways</td>
+                                    <td>0.248</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.101</td>
+                                    <td>0.500</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.485</td>
+                                    <td>0.881</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.870</td>
+                                </tr>
+                                <tr>
+                                    <td>All</td>
+                                    <td>0.348</td>
+                                    <td>0.098</td>
+                                    <td>0.270</td>
+                                    <td>0.159</td>
+                                    <td>0.514</td>
+                                    <td>0.243</td>
+                                    <td>0.565</td>
+                                    <td>0.515</td>
+                                    <td>0.892</td>
+                                    <td>0.536</td>
+                                    <td>0.744</td>
+                                    <td>0.753</td>
+                                </tr>
+                                <tr>
+                                    <td>Urban</td>
+                                    <td rowspan="5" style="vertical-align: middle;">Twilight</td>
+                                    <td>0.524</td>
+                                    <td>0.124</td>
+                                    <td>0.095</td>
+                                    <td>0.167</td>
+                                    <td>0.598</td>
+                                    <td>0.149</td>
+                                    <td>0.268</td>
+                                    <td>0.444</td>
+                                    <td>0.961</td>
+                                    <td>0.63</td>
+                                    <td>0.806</td>
+                                    <td>0.881</td>
+                                </tr>
+                                <tr>
+                                    <td>Suburban</td>
+                                    <td>0.375</td>
+                                    <td>0.057</td>
+                                    <td>0.430</td>
+                                    <td>0.239</td>
+                                    <td>0.523</td>
+                                    <td>0.338</td>
+                                    <td>0.714</td>
+                                    <td>0.618</td>
+                                    <td>0.887</td>
+                                    <td>0.376</td>
+                                    <td>0.815</td>
+                                    <td>0.744</td>
+                                </tr>
+                                <tr>
+                                    <td>Rural</td>
+                                    <td>0.418</td>
+                                    <td>0.068</td>
+                                    <td>0.226</td>
+                                    <td>0.143</td>
+                                    <td>0.488</td>
+                                    <td>0.473</td>
+                                    <td>0.396</td>
+                                    <td>0.471</td>
+                                    <td>0.878</td>
+                                    <td>0.46</td>
+                                    <td>0.584</td>
+                                    <td>0.552</td>
+                                </tr>
+                                <tr>
+                                    <td>Highways</td>
+                                    <td>0.248</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.101</td>
+                                    <td>0.500</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.485</td>
+                                    <td>0.881</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.870</td>
+                                </tr>
+                                <tr>
+                                    <td>All</td>
+                                    <td>0.348</td>
+                                    <td>0.098</td>
+                                    <td>0.270</td>
+                                    <td>0.159</td>
+                                    <td>0.514</td>
+                                    <td>0.243</td>
+                                    <td>0.565</td>
+                                    <td>0.515</td>
+                                    <td>0.892</td>
+                                    <td>0.536</td>
+                                    <td>0.744</td>
+                                    <td>0.753</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="text-center">Ego Perception Baseline Evaluation: Results of tensor-based methods RVT
+                            and RED, along with
+                            the frame-based approach
+                            YOLOv8, across different map types (Urban, Suburban, and Rural) in ego-driving scenarios.
+                            RVT and RED evaluations are
+                            conducted on event data, while YOLOv8 is evaluated on RGB data captured from the front view
+                            of the ego-vehicle.</p>
+                    </div>
+
+                    <div class="table-container">
+                        <table class="table table-bordered text-center"
+                            style="max-width: 100%; display: block; overflow: scroll;">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Map Type</th>
+                                    <th rowspan="2">Lighting Conditions</th>
+                                    <th colspan="4">RED (EVENT)</th>
+                                    <th colspan="4">RVT (EVENT)</th>
+                                    <th colspan="4">YOLOv8 (RGB)</th>
+                                </tr>
+                                <tr>
+                                    <th>Car</th>
+                                    <th>Pedestrian</th>
+                                    <th>Motorcycle</th>
+                                    <th>All Classes</th>
+                                    <th>Car</th>
+                                    <th>Pedestrian</th>
+                                    <th>Motorcycle</th>
+                                    <th>All Classes</th>
+                                    <th>Car</th>
+                                    <th>Pedestrian</th>
+                                    <th>Motorcycle</th>
+                                    <th>All Classes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Urban</td>
+                                    <td rowspan="5" style="vertical-align: middle;">Noon</td>
+                                    <td>0.524</td>
+                                    <td>0.124</td>
+                                    <td>0.095</td>
+                                    <td>0.167</td>
+                                    <td>0.598</td>
+                                    <td>0.149</td>
+                                    <td>0.268</td>
+                                    <td>0.444</td>
+                                    <td>0.961</td>
+                                    <td>0.63</td>
+                                    <td>0.806</td>
+                                    <td>0.881</td>
+                                </tr>
+                                <tr>
+                                    <td>Suburban</td>
+                                    <td>0.375</td>
+                                    <td>0.057</td>
+                                    <td>0.430</td>
+                                    <td>0.239</td>
+                                    <td>0.523</td>
+                                    <td>0.338</td>
+                                    <td>0.714</td>
+                                    <td>0.618</td>
+                                    <td>0.887</td>
+                                    <td>0.376</td>
+                                    <td>0.815</td>
+                                    <td>0.744</td>
+                                </tr>
+                                <tr>
+                                    <td>Rural</td>
+                                    <td>0.418</td>
+                                    <td>0.068</td>
+                                    <td>0.226</td>
+                                    <td>0.143</td>
+                                    <td>0.488</td>
+                                    <td>0.473</td>
+                                    <td>0.396</td>
+                                    <td>0.471</td>
+                                    <td>0.878</td>
+                                    <td>0.46</td>
+                                    <td>0.584</td>
+                                    <td>0.552</td>
+                                </tr>
+                                <tr>
+                                    <td>Highways</td>
+                                    <td>0.248</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.101</td>
+                                    <td>0.500</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.485</td>
+                                    <td>0.881</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.870</td>
+                                </tr>
+                                <tr>
+                                    <td>All</td>
+                                    <td>0.348</td>
+                                    <td>0.098</td>
+                                    <td>0.270</td>
+                                    <td>0.159</td>
+                                    <td>0.514</td>
+                                    <td>0.243</td>
+                                    <td>0.565</td>
+                                    <td>0.515</td>
+                                    <td>0.892</td>
+                                    <td>0.536</td>
+                                    <td>0.744</td>
+                                    <td>0.753</td>
+                                </tr>
+                                <tr>
+                                    <td>Urban</td>
+                                    <td rowspan="5" style="vertical-align: middle;">Night</td>
+                                    <td>0.524</td>
+                                    <td>0.124</td>
+                                    <td>0.095</td>
+                                    <td>0.167</td>
+                                    <td>0.598</td>
+                                    <td>0.149</td>
+                                    <td>0.268</td>
+                                    <td>0.444</td>
+                                    <td>0.961</td>
+                                    <td>0.63</td>
+                                    <td>0.806</td>
+                                    <td>0.881</td>
+                                </tr>
+                                <tr>
+                                    <td>Suburban</td>
+                                    <td>0.375</td>
+                                    <td>0.057</td>
+                                    <td>0.430</td>
+                                    <td>0.239</td>
+                                    <td>0.523</td>
+                                    <td>0.338</td>
+                                    <td>0.714</td>
+                                    <td>0.618</td>
+                                    <td>0.887</td>
+                                    <td>0.376</td>
+                                    <td>0.815</td>
+                                    <td>0.744</td>
+                                </tr>
+                                <tr>
+                                    <td>Rural</td>
+                                    <td>0.418</td>
+                                    <td>0.068</td>
+                                    <td>0.226</td>
+                                    <td>0.143</td>
+                                    <td>0.488</td>
+                                    <td>0.473</td>
+                                    <td>0.396</td>
+                                    <td>0.471</td>
+                                    <td>0.878</td>
+                                    <td>0.46</td>
+                                    <td>0.584</td>
+                                    <td>0.552</td>
+                                </tr>
+                                <tr>
+                                    <td>Highways</td>
+                                    <td>0.248</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.101</td>
+                                    <td>0.500</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.485</td>
+                                    <td>0.881</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.870</td>
+                                </tr>
+                                <tr>
+                                    <td>All</td>
+                                    <td>0.348</td>
+                                    <td>0.098</td>
+                                    <td>0.270</td>
+                                    <td>0.159</td>
+                                    <td>0.514</td>
+                                    <td>0.243</td>
+                                    <td>0.565</td>
+                                    <td>0.515</td>
+                                    <td>0.892</td>
+                                    <td>0.536</td>
+                                    <td>0.744</td>
+                                    <td>0.753</td>
+                                </tr>
+                                <tr>
+                                    <td>Urban</td>
+                                    <td rowspan="5" style="vertical-align: middle;">Twilight</td>
+                                    <td>0.524</td>
+                                    <td>0.124</td>
+                                    <td>0.095</td>
+                                    <td>0.167</td>
+                                    <td>0.598</td>
+                                    <td>0.149</td>
+                                    <td>0.268</td>
+                                    <td>0.444</td>
+                                    <td>0.961</td>
+                                    <td>0.63</td>
+                                    <td>0.806</td>
+                                    <td>0.881</td>
+                                </tr>
+                                <tr>
+                                    <td>Suburban</td>
+                                    <td>0.375</td>
+                                    <td>0.057</td>
+                                    <td>0.430</td>
+                                    <td>0.239</td>
+                                    <td>0.523</td>
+                                    <td>0.338</td>
+                                    <td>0.714</td>
+                                    <td>0.618</td>
+                                    <td>0.887</td>
+                                    <td>0.376</td>
+                                    <td>0.815</td>
+                                    <td>0.744</td>
+                                </tr>
+                                <tr>
+                                    <td>Rural</td>
+                                    <td>0.418</td>
+                                    <td>0.068</td>
+                                    <td>0.226</td>
+                                    <td>0.143</td>
+                                    <td>0.488</td>
+                                    <td>0.473</td>
+                                    <td>0.396</td>
+                                    <td>0.471</td>
+                                    <td>0.878</td>
+                                    <td>0.46</td>
+                                    <td>0.584</td>
+                                    <td>0.552</td>
+                                </tr>
+                                <tr>
+                                    <td>Highways</td>
+                                    <td>0.248</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.101</td>
+                                    <td>0.500</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.485</td>
+                                    <td>0.881</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>0.870</td>
+                                </tr>
+                                <tr>
+                                    <td>All</td>
+                                    <td>0.348</td>
+                                    <td>0.098</td>
+                                    <td>0.270</td>
+                                    <td>0.159</td>
+                                    <td>0.514</td>
+                                    <td>0.243</td>
+                                    <td>0.565</td>
+                                    <td>0.515</td>
+                                    <td>0.892</td>
+                                    <td>0.536</td>
+                                    <td>0.744</td>
+                                    <td>0.753</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="text-center">Fixed perception Baseline Evaluation: Results of tensor-based methods RVT
+                            and RED, along with the frame-based approach
+                            YOLOv8, across different map types (Intersections, Roundabout, Underpass, and Overpass) in
+                            fixed perception scenarios.
+                            RVT and RED evaluations are conducted on event data, while YOLOv8 is evaluated on RGB data.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="text-center">Copyright &copy; 2024, ASU APG Group. All rights reserved.</p>
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js">
+
+</script>
+<script src="./js/script.js">
+
+</script>
+
+</html>
