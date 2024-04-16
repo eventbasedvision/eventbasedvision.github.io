@@ -177,8 +177,20 @@
 									</a>
 								</span>
 								
+                <span class="link-block">
+									<a href="https://docs.google.com/forms/d/e/1FAIpQLSfH2LI5oqWWfose-pBC3dsbaAMvRQuv0BI93njV_5wQjYx83w/viewform?pli=1" target="_blank"  class="external-link button is-normal is-rounded is-dark">
+										
+										<span class="icon">
+											<i class="far fa-file-alt"></i>
+										</span>
+										
+										<span>
+											Dataset Description
+										</span>
+									</a>
+								</span>
 								
-								
+                <br>	
 								<span class="link-block">
 									<a href="#" class="external-link button is-normal is-rounded is-dark" target="_blank" >
 									
@@ -207,7 +219,6 @@
 								</span>
 								
 							
-								<br>
 								<span class="link-block">
 									<a href="docs/eTram_Supp.pdf" target="_blank" class="button is-normal is-rounded is-dark" target="_blank" >
 										<span class="icon">
@@ -230,12 +241,12 @@
 		<section class="hero teaser">
 			<div class="container is-max-desktop">
 				<div class="hero-body">
-					<img src="media/eTraM/eTraM_teaser.png" class="center"/><br><br>
+					<img src="media/eTraM/gifs/eTraM_Cover.gif" class="center"/>
 						<h2 class="subtitle has-text-centered">
 						  <strong>eTraM</strong> a novel fully event-based traffic perception dataset curated using the state-of-the-art (SOTA) high-resolution Prophesee EVK4 HD event camera. 
 						  The dataset spans over 10hr of annotated data from a static perspective that facilitates comprehensive traffic monitoring. 
-						  The dataset encomposes various weather and lighting conditions spanning challenging scenarios such as high glare, overexposure, underexposure, nighttime, twilight, and rainy days. 
-						  eTraM includes over 2M bounding box annotations of traff ic participants such as vehicles, pedestrians, and various micro-mobility.
+						  The dataset encompasses various weather and lighting conditions spanning challenging scenarios such as high glare, overexposure, underexposure, nighttime, twilight, and rainy days. 
+						  eTraM includes 2M bounding box annotations of traffic participants such as vehicles, pedestrians, and various micro-mobility.
 						</h2>
 				</div>
 			</div>
@@ -292,9 +303,9 @@
 							<div class="content has-text-justified">
 								<br>  
 								<p> We utilized Prophesee EVK4 HD event camera, notable for its high resolution (1280×720 px), 
-								temporal resolution (over 10, 000 fps), dynamic range (above 120 dB), and exceptional low light 
-								cutoff (0.08 Lux), to capture highquality data. The event camera was strategically positioned at 
-								approximately 6m with a pitch angle of about 35<sup>o</sup> to the ground. This configuration is 
+								temporal resolution (over 10,000 fps), dynamic range (above 120 dB), and exceptional low light 
+								cutoff (0.08 Lux), to capture high-quality data. The event camera was strategically positioned at 
+								approximately 6m with a pitch angle of 35<sup>o</sup> to the ground. This configuration is 
 								deliberately chosen to maintain consistency with the placement of traffic cameras and to ensure 
 								comprehensive coverage of interactions between diverse traffic participants.
 								</p>
@@ -312,14 +323,15 @@
 				<div class="columns is-centered has-text-centered">
 					<div class="column is-four-fifths">
 						
-						<h2 class="title is-3">eTraM - Stats </h2>
+						<h2 class="title is-3">eTraM - Statistics </h2>
 						<img src="media/eTraM/eTraM_Stats.png" class="center"/>
 							<div class="content has-text-justified">
 								<br>  
-								<p>	The dataset encompasses three distinct traffic monitoring scenes with 5 hrs of intersection, 3 hrs 
+								<p>	eTraM encompasses three distinct traffic monitoring scenes with 5 hrs of intersection, 3 hrs 
 								of roadway, and 2 hr of local street data sequences. Data for each scene is collected at multiple locations. For instance, 
 								the intersection scene contains data from 2 four-way, threeway, daytime, nighttime, and twilight data totaling up to 10 hr of 
-								data with 5 hrs of daytime and nighttime data. eTraM contains over 2M instances of 2D bounding box annotations for traffic participant detection. These annotations
+								data with 5 hrs of daytime and nighttime data. eTraM contains 2M instances of 2D bounding box 
+                annotations for traffic participant detection. These annotations
 								additionally include object IDs, making it possible to
 								evaluate multi-object tracking, as shown in the supplementary
 								material. The annotation classes encompass a range
@@ -357,13 +369,11 @@
 		<center>
 			<h2 class="title">BibTeX</h2>
 		</center>
-			<pre><code>@misc{verma2024etram,
-      title={eTraM: Event-based Traffic Monitoring Dataset}, 
-      author={Aayush Atul Verma and Bharatesh Chakravarthi and Arpitsinh Vaghela and Hua Wei and Yezhou Yang},
-      year={2024},
-      eprint={2403.19976},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+			<pre><code>@article{verma2024etram,
+  title   = {eTraM: Event-based Traffic Monitoring Dataset},
+  author  = {Verma, Aayush Atul and Chakravarthi, Bharatesh and Vaghela, Arpitsinh and Wei, Hua and Yang, Yezhou},
+  journal = {arXiv preprint arXiv:2403.19976},
+  year    = {2024}
 }</code></pre>
 		 </div>
 		</section>
