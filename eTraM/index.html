@@ -32,7 +32,23 @@
 		
 	</head>
 
+  <style>
+    .publication-videos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
+    .video-wrapper {
+      flex: 0 0 32%;
+      padding: 8px;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 240px;
+    }
+  </style>
 	<body>
 
 		<nav class="navbar" role="navigation" aria-label="main navigation">
@@ -241,7 +257,8 @@
 		<section class="hero teaser">
 			<div class="container is-max-desktop">
 				<div class="hero-body">
-					<img src="media/eTraM/gifs/eTraM_Cover.gif" class="center"/>
+					<!-- <img src="media/eTraM/gifs/eTramGIF-cropped.gif" class="center"/> -->
+          <img src="media/eTraM/gifs/eTraMGIF.gif" class="center"/>
 						<h2 class="subtitle has-text-centered">
 						  <strong>eTraM</strong> a novel fully event-based traffic perception dataset curated using the state-of-the-art (SOTA) high-resolution Prophesee EVK4 HD event camera. 
 						  The dataset spans over 10hr of annotated data from a static perspective that facilitates comprehensive traffic monitoring. 
@@ -254,15 +271,12 @@
 		
 		<section class="hero teaser">
 			<div class="container is-max-desktop">
-				<div class="hero-body">
+				<div class="hero-body" style="padding: 0px;">
 					<center>
-						
-						<h3 class="title is-3">Teaser Video</h3>
-				
-						<video width="700" controls align="center">
-							<source src="/blog/videos/abc.mp4" type="video/mp4">
-						</video>
-						
+						<h3 class="title is-3" style="margin-bottom: 0px;">Teaser Video</h3>
+              <!-- <img src="media/eTraM/gifs/eTraMGIF.gif" class="center"/> -->
+              <img src="media/eTraM/gifs/eTraM Teaser GIF.gif" class="center"/>
+
 					</center>
 				</div>
 			</div>
@@ -281,7 +295,7 @@
 								   overview of real-world situations. Providing 2M bounding box annotations, it covers eight distinct classes of traffic
 								   participants, ranging from vehicles to pedestrians and micro-mobility. eTraM's utility has been assessed 
 								   using state-of-the-art methods for traffic participant detection, including RVT, RED, and YOLOv8. 
-								   We quantitatively evaluate the ability of event-based models to generalize on nighttime and unseen scenes. 
+								   We quantitatively evaluate their ability to generalize on nighttime and unseen scenes. 
 								   Our findings substantiate the compelling potential of leveraging event cameras for traffic monitoring, 
 								   opening new avenues for research and application.
 								</p>
@@ -306,7 +320,7 @@
 								temporal resolution (over 10,000 fps), dynamic range (above 120 dB), and exceptional low light 
 								cutoff (0.08 Lux), to capture high-quality data. The event camera was strategically positioned at 
 								approximately 6m with a pitch angle of 35<sup>o</sup> to the ground. This configuration is 
-								deliberately chosen to maintain consistency with the placement of traffic cameras and to ensure 
+								chosen to maintain consistency with the placement of traffic cameras and ensure 
 								comprehensive coverage of interactions between diverse traffic participants.
 								</p>
 							</div>
@@ -346,23 +360,29 @@
 				<hr>
 			</div>
 		</section>
+
+    <section class="hero teaser">
+      <div class="container is-max-desktop" style="max-width: 200%; width: 1200px;">
+        <div class="hero-body">
+          <center>
+            <h3 class="title is-3">Sample Data Recordings</h3>
+            <div class="publication-videos">
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/JgVIGp3tXmk?si=LgnNogCKDxWBkas3" allow="accelerometer; autoplay; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="video-wrapper">
+                <iframe src=https://www.youtube.com/embed/1x5at20496E?si=CLjSFhbYG_xhEEIC" allow="accelerometer; autoplay; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/L3uWqIsqKTM?si=Pc364Qd3Fb_JRMV" allow="accelerometer; autoplay; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+          </center>
+        </div>
+        <hr>
+      </div>
+    </section>
 		
-		<section class="hero teaser">
-			<div class="container is-max-desktop">
-				<div class="hero-body">
-					<center>
-						
-						<h3 class="title is-3">Sample Data Recordings</h3>
-				
-						<video width="700" controls align="center">
-							<source src="/blog/videos/abc.mp4" type="video/mp4">
-						</video>
-						
-					</center>
-				</div>
-				<hr>
-			</div>
-		</section>
 				
 		<section class="hero teaser" id="BibTeX">
 		<div class="container is-max-desktop content">
