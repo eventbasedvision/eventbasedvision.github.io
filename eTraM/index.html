@@ -32,7 +32,23 @@
 		
 	</head>
 
+  <style>
+    .publication-videos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
+    .video-wrapper {
+      flex: 0 0 32%;
+      padding: 8px;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 240px;
+    }
+  </style>
 	<body>
 
 		<nav class="navbar" role="navigation" aria-label="main navigation">
@@ -177,8 +193,20 @@
 									</a>
 								</span>
 								
+                <span class="link-block">
+									<a href="https://docs.google.com/document/d/1P5T7h6qY8bQSmYEWn3DF6HjHznz8VeG41WrUh9FUVPA/edit#heading=h.6v1552exvkx" target="_blank"  class="external-link button is-normal is-rounded is-dark">
+										
+										<span class="icon">
+											<i class="far fa-file-alt"></i>
+										</span>
+										
+										<span>
+											Dataset Description
+										</span>
+									</a>
+								</span>
 								
-								
+                <br>	
 								<span class="link-block">
 									<a href="#" class="external-link button is-normal is-rounded is-dark" target="_blank" >
 									
@@ -207,7 +235,6 @@
 								</span>
 								
 							
-								<br>
 								<span class="link-block">
 									<a href="docs/eTram_Supp.pdf" target="_blank" class="button is-normal is-rounded is-dark" target="_blank" >
 										<span class="icon">
@@ -230,12 +257,13 @@
 		<section class="hero teaser">
 			<div class="container is-max-desktop">
 				<div class="hero-body">
-					<img src="media/eTraM/eTraM_teaser.png" class="center"/><br><br>
-						<h2 class="subtitle has-text-centered">
+					<!-- <img src="media/eTraM/gifs/eTramGIF-cropped.gif" class="center"/> -->
+          <img src="media/eTraM/eTraM_teaser.png" class="center"/>
+						<h2 class="subtitles has-text-centered">
 						  <strong>eTraM</strong> a novel fully event-based traffic perception dataset curated using the state-of-the-art (SOTA) high-resolution Prophesee EVK4 HD event camera. 
 						  The dataset spans over 10hr of annotated data from a static perspective that facilitates comprehensive traffic monitoring. 
-						  The dataset encomposes various weather and lighting conditions spanning challenging scenarios such as high glare, overexposure, underexposure, nighttime, twilight, and rainy days. 
-						  eTraM includes over 2M bounding box annotations of traff ic participants such as vehicles, pedestrians, and various micro-mobility.
+						  The dataset encompasses various weather and lighting conditions spanning challenging scenarios such as high glare, overexposure, underexposure, nighttime, twilight, and rainy days. 
+						  eTraM includes 2M bounding box annotations of traffic participants such as vehicles, pedestrians, and various micro-mobility.
 						</h2>
 				</div>
 			</div>
@@ -243,16 +271,13 @@
 		
 		<section class="hero teaser">
 			<div class="container is-max-desktop">
-				<div class="hero-body">
+				<div class="hero-body" style="padding: 0px;">
 					<center>
-						
-						<h3 class="title is-3">Teaser Video</h3>
-				
-						<video width="700" controls align="center">
-							<source src="/blog/videos/abc.mp4" type="video/mp4">
-						</video>
-						
-					</center>
+						<h3 class="title is-3" style="margin-bottom: 0px;">Teaser Video</h3>
+							<!-- <iframe src="https://arizonastateu-my.sharepoint.com/personal/averma90_sundevils_asu_edu/_layouts/15/embed.aspx?UniqueId=4fe2ce95-9fa7-4217-8c73-66301672992b" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="eTramGIF.gif"></iframe> -->
+							<iframe src="https://arizonastateu-my.sharepoint.com/personal/averma90_sundevils_asu_edu/_layouts/15/embed.aspx?UniqueId=fd06eae9-7576-4655-a3d6-feb1a403fb48" 
+								width="960px" height="540px" frameborder="0" scrolling="no" allowfullscreen title="eTraM Teaser GIF.gif">
+							</iframe>
 				</div>
 			</div>
 		</section>
@@ -270,7 +295,7 @@
 								   overview of real-world situations. Providing 2M bounding box annotations, it covers eight distinct classes of traffic
 								   participants, ranging from vehicles to pedestrians and micro-mobility. eTraM's utility has been assessed 
 								   using state-of-the-art methods for traffic participant detection, including RVT, RED, and YOLOv8. 
-								   We quantitatively evaluate the ability of event-based models to generalize on nighttime and unseen scenes. 
+								   We quantitatively evaluate their ability to generalize on nighttime and unseen scenes. 
 								   Our findings substantiate the compelling potential of leveraging event cameras for traffic monitoring, 
 								   opening new avenues for research and application.
 								</p>
@@ -292,10 +317,10 @@
 							<div class="content has-text-justified">
 								<br>  
 								<p> We utilized Prophesee EVK4 HD event camera, notable for its high resolution (1280×720 px), 
-								temporal resolution (over 10, 000 fps), dynamic range (above 120 dB), and exceptional low light 
-								cutoff (0.08 Lux), to capture highquality data. The event camera was strategically positioned at 
-								approximately 6m with a pitch angle of about 35<sup>o</sup> to the ground. This configuration is 
-								deliberately chosen to maintain consistency with the placement of traffic cameras and to ensure 
+								temporal resolution (over 10,000 fps), dynamic range (above 120 dB), and exceptional low light 
+								cutoff (0.08 Lux), to capture high-quality data. The event camera was strategically positioned at 
+								approximately 6m with a pitch angle of 35<sup>o</sup> to the ground. This configuration is 
+								chosen to maintain consistency with the placement of traffic cameras and ensure 
 								comprehensive coverage of interactions between diverse traffic participants.
 								</p>
 							</div>
@@ -312,14 +337,15 @@
 				<div class="columns is-centered has-text-centered">
 					<div class="column is-four-fifths">
 						
-						<h2 class="title is-3">eTraM - Stats </h2>
+						<h2 class="title is-3">eTraM - Statistics </h2>
 						<img src="media/eTraM/eTraM_Stats.png" class="center"/>
 							<div class="content has-text-justified">
 								<br>  
-								<p>	The dataset encompasses three distinct traffic monitoring scenes with 5 hrs of intersection, 3 hrs 
+								<p>	eTraM encompasses three distinct traffic monitoring scenes with 5 hrs of intersection, 3 hrs 
 								of roadway, and 2 hr of local street data sequences. Data for each scene is collected at multiple locations. For instance, 
 								the intersection scene contains data from 2 four-way, threeway, daytime, nighttime, and twilight data totaling up to 10 hr of 
-								data with 5 hrs of daytime and nighttime data. eTraM contains over 2M instances of 2D bounding box annotations for traffic participant detection. These annotations
+								data with 5 hrs of daytime and nighttime data. eTraM contains 2M instances of 2D bounding box 
+                annotations for traffic participant detection. These annotations
 								additionally include object IDs, making it possible to
 								evaluate multi-object tracking, as shown in the supplementary
 								material. The annotation classes encompass a range
@@ -334,36 +360,40 @@
 				<hr>
 			</div>
 		</section>
+
+    <section class="hero teaser">
+      <div class="container is-max-desktop" style="max-width: 200%; width: 1200px;">
+        <div class="hero-body">
+          <center>
+            <h3 class="title is-3">Sample Data Recordings</h3>
+            <div class="publication-videos">
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/JgVIGp3tXmk?si=LgnNogCKDxWBkas3" allow="accelerometer; autoplay; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="video-wrapper">
+                <iframe src=https://www.youtube.com/embed/1x5at20496E?si=CLjSFhbYG_xhEEIC" allow="accelerometer; autoplay; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/L3uWqIsqKTM?si=Pc364Qd3Fb_JRMV" allow="accelerometer; autoplay; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+          </center>
+        </div>
+        <hr>
+      </div>
+    </section>
 		
-		<section class="hero teaser">
-			<div class="container is-max-desktop">
-				<div class="hero-body">
-					<center>
-						
-						<h3 class="title is-3">Sample Data Recordings</h3>
-				
-						<video width="700" controls align="center">
-							<source src="/blog/videos/abc.mp4" type="video/mp4">
-						</video>
-						
-					</center>
-				</div>
-				<hr>
-			</div>
-		</section>
 				
 		<section class="hero teaser" id="BibTeX">
 		<div class="container is-max-desktop content">
 		<center>
 			<h2 class="title">BibTeX</h2>
 		</center>
-			<pre><code>@misc{verma2024etram,
-      title={eTraM: Event-based Traffic Monitoring Dataset}, 
-      author={Aayush Atul Verma and Bharatesh Chakravarthi and Arpitsinh Vaghela and Hua Wei and Yezhou Yang},
-      year={2024},
-      eprint={2403.19976},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+			<pre><code>@article{verma2024etram,
+  title   = {eTraM: Event-based Traffic Monitoring Dataset},
+  author  = {Verma, Aayush Atul and Chakravarthi, Bharatesh and Vaghela, Arpitsinh and Wei, Hua and Yang, Yezhou},
+  journal = {arXiv preprint arXiv:2403.19976},
+  year    = {2024}
 }</code></pre>
 		 </div>
 		</section>
