@@ -4,11 +4,13 @@ This project contains the source code for the [eTraM website](https://eventbased
 # Cite
 If you find eTraM useful for your work please cite:
 ```
-@article{verma2024etram,
-  title={eTraM: Event-based Traffic Monitoring Dataset},
-  author={Verma, Aayush Atul and Chakravarthi, Bharatesh and Vaghela, Arpitsinh and Wei, Hua and Yang, Yezhou},
-  journal={arXiv preprint arXiv:2403.19976},
-  year={2024}
+@InProceedings{Verma_2024_CVPR,
+    author    = {Verma, Aayush Atul and Chakravarthi, Bharatesh and Vaghela, Arpitsinh and Wei, Hua and Yang, Yezhou},
+    title     = {eTraM: Event-based Traffic Monitoring Dataset},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {22637-22646}
 }
 ```
 
