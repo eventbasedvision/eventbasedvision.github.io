@@ -3568,13 +3568,11 @@ ol {
 .inner-content a,
 .hero-content a {
   color: rgb(220, 220, 220);
-  font-weight: bold;
 }
 
 .inner-content a:hover,
 .hero-content a:hover {
   color: #fff;
-  font-weight: bold;
   text-decoration: underline;
 }
 
@@ -3603,4 +3601,9 @@ ol {
 
 .section:nth-child(2n) {
   background-color: #f4f7fa;
+}
+
+
+.topic-name {
+  font-weight: bold;
 }
