@@ -38,7 +38,7 @@
                         <!-- Start Navbar -->
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/logo/logo.svg" alt="Logo">
+                                <img src="assets/images/logo/logo.svg" height="10px" alt="">
                             </a>
                             <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -54,37 +54,32 @@
                                             onclick="switch_nav(MainNav.Home)" aria-label="Toggle navigation">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a id="overview-nav" href="#main-section"
-                                            onclick="switch_nav(MainNav.Challenge)"
-                                            aria-label="Toggle navigation">Overview</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a id="call-nav" href="#call-section"
-                                            onclick="switch_nav(MainNav.Submission)"
+                                        <a id="call-nav" href="#call-section" onclick="switch_nav(MainNav.Submission)"
                                             aria-label="Toggle navigation">Call for Paper</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a id="speakers-nav" href="#speakers-section"
-                                            onclick="switch_nav(MainNav.Speakers)"
+                                        <a id="topics-nav" href="#topics-section" onclick="switch_nav(MainNav.Speakers)"
                                             aria-label="Toggle navigation">Topics</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a id="organizers-nav" href="#organizers-section"
-                                            onclick="switch_nav(MainNav.Organizers)"
-                                            aria-label="Toggle navigation">Organizers</a>
                                     </li>
                                     <li class="nav-item">
                                         <a id="dates-nav" href="#dates-section" onclick="switch_nav(MainNav.Dates)"
                                             aria-label="Toggle navigation">Dates</a>
                                     </li>
+
+                                    <li class="nav-item">
+                                        <a id="speakers-nav" href="#speakers-section"
+                                            onclick="switch_nav(MainNav.Organizers)"
+                                            aria-label="Toggle navigation">Speakers</a>
+                                    </li>
                                     <li class="nav-item">
                                         <a id="schedule-nav" href="#schedule-section"
                                             onclick="switch_nav(MainNav.Schedule)"
-                                            aria-label="Toggle navigation">Program</a>
+                                            aria-label="Toggle navigation">Schedule</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a id="contact-nav" href="mailto:habib.slim@kaust.edu.sa"
-                                            aria-label="Toggle navigation">Contact</a>
+                                        <a id="organizers-nav" href="#organizers-section"
+                                            onclick="switch_nav(MainNav.Organizers)"
+                                            aria-label="Toggle navigation">Organizers</a>
                                     </li>
                                 </ul>
                             </div>
@@ -138,7 +133,7 @@
 
 
     <!-- Start Count Down Area -->
-    <div class="count-down">
+    <!-- <div class="count-down">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -165,7 +160,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Count Down Area -->
 
     <!-- Start Accepted Papers Area -->
@@ -193,45 +188,87 @@
                         strengths of event-based vision with the transformative capabilities of generative AI - a
                         combination not fully explored previously.
                     </div>
-                    </br>
-                    </br>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- /End Accepted Papers Area -->
+    <section class="call section" id="call-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <!-- <h3 class="wow zoomIn" data-wow-delay=".2s">Objective</h3> -->
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Call for Papers</h2>
+                    </div>
+                    <div class="section-text-content">
+                        All papers should be submitted at: … Regular papers must be prepared according to WACV
+                        guidelines. All papers will be reviewed by at least two reviewers with the double-blind policy.
+                        Position papers or opinions about this direction of research and relevant papers recently
+                        accepted at vision/ML/NLP conferences are also welcome.
+
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="topic section" id="topics-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
                     <div class="section-title">
                         <!-- <h3 class="wow zoomIn" data-wow-delay=".2s">Challenges</h3> -->
                         <h2 class="wow fadeInUp" data-wow-delay=".4s">Topics</h2>
                     </div>
                     <div class="section-text-content">
-                        The workshop aims to initiate discussions and inspire novel research directions that leverage the unique combination of event-based vision and generative AI. By fostering collaborative efforts, we hope to push the boundaries of visual processing, leading to innovative solutions that address complex challenges in visual perception and cognition. We welcome submissions relevant, but not limited, to the topics below:
-                        <br/>
-                        <br/>
-                        <br/>
-                        <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Video Generation and Interpolation: Leveraging event-based vision and generative models to create high-quality video content from sparse or low-resolution inputs.</li>
-                        <li class="list-group-item">Motion Deblurring and Enhancement: Techniques for mitigating motion blur and enhancing dynamic scenes through the synergy of event-based vision and generative models.</li>
-                        <li class="list-group-item">Motion Generation and Prediction: Integrating event-based vision with generative models for predicting and generating realistic motion in video sequences.</li>
-                        <li class="list-group-item">Image Generation and Restoration: Exploring novel approaches for image synthesis and restoration using event-based sensors and Generative AI.</li>
-                        <li class="list-group-item">Conceptual Reasoning for Visual Content: Employing Generative AI to understand and generate visual content based on high-level conceptual reasoning.</li>
-                        <li class="list-group-item">Multimodal Fusion: Innovations in fusing data from RGB cameras, LiDAR, and event-based sensors to improve visual understanding and synthesis across diverse scenarios</li>
-                        <li class="list-group-item">Gesture Reconstruction and Recognition: Utilizing event-based vision for accurate gesture reconstruction and recognition with the aid of Generative AI.</li>
-                        <li class="list-group-item">Autonomous Systems: Applying diffusion and language models with event-based vision for enhancing perception and robustness in autonomous systems.</li>
+                        The workshop aims to initiate discussions and inspire novel research directions that leverage
+                        the unique combination of event-based vision and generative AI. By fostering collaborative
+                        efforts, we hope to push the boundaries of visual processing, leading to innovative solutions
+                        that address complex challenges in visual perception and cognition. We welcome submissions
+                        relevant, but not limited, to the topics below:
+                        <br />
+                        <br />
+                        <ul class="col-lg-10 offset-lg-1 list-group-flush">
+                            <li class="list-group-item">Video Generation and Interpolation: Leveraging event-based
+                                vision and generative models to create high-quality video content from sparse or
+                                low-resolution inputs.</li>
+                            <li class="list-group-item">Motion Deblurring and Enhancement: Techniques for mitigating
+                                motion blur and enhancing dynamic scenes through the synergy of event-based vision and
+                                generative models.</li>
+                            <li class="list-group-item">Motion Generation and Prediction: Integrating event-based vision
+                                with generative models for predicting and generating realistic motion in video
+                                sequences.</li>
+                            <li class="list-group-item">Image Generation and Restoration: Exploring novel approaches for
+                                image synthesis and restoration using event-based sensors and Generative AI.</li>
+                            <li class="list-group-item">Conceptual Reasoning for Visual Content: Employing Generative AI
+                                to understand and generate visual content based on high-level conceptual reasoning.</li>
+                            <li class="list-group-item">Multimodal Fusion: Innovations in fusing data from RGB cameras,
+                                LiDAR, and event-based sensors to improve visual understanding and synthesis across
+                                diverse scenarios</li>
+                            <li class="list-group-item">Gesture Reconstruction and Recognition: Utilizing event-based
+                                vision for accurate gesture reconstruction and recognition with the aid of Generative
+                                AI.</li>
+                            <li class="list-group-item">Autonomous Systems: Applying diffusion and language models with
+                                event-based vision for enhancing perception and robustness in autonomous systems.</li>
                         </ul>
                     </div>
 
-                    <div class="section-title">
-                        <!-- <h3 class="wow zoomIn" data-wow-delay=".2s">Challenges</h3> -->
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Call for Paper</h2>
-                    </div>
-                    <div class="section-text-content">
-                        
-                        All papers should be submitted at: … Regular papers must be prepared according to WACV guidelines. All papers will be reviewed by at least two reviewers with the double-blind policy.
-                        Position papers or opinions about this direction of research and relevant papers recently accepted at vision/ML/NLP conferences are also welcome.
-                        
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <br/>
-                        <br/>
-                        <br/>
-                        <div class="section-title">
-                        <h3 class="section-title wow zoomIn">Dates</h3>
-                        </div>
+    <section class="dates section" id="dates-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2 class="wow fadeInUp">Important Dates</h2>
+                        <div class="section-text-content">
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -259,312 +296,77 @@
                                 </tbody>
                             </table>
 
-                        <ul class="list-group list-group-flush">
-                        <li class="list-group-item"></li></ul>
-
+                        </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </section>
-    <!-- /End Accepted Papers Area -->
 
-    <!-- Start Speakers Area -->
     <section class="speakers section" id="speakers-section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h3 class="wow zoomIn" data-wow-delay=".2s"
-                            style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">Speakers</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s"
-                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Coming Soon</h2>
+                        <h2 class="wow fadeInUp" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">Speakers
+                        </h2>
                     </div>
+                    <div class="section-text-content">Heloo</div>
                 </div>
             </div>
 
-            <div class="all-speakers">
-                <!-- <div class="row text-center justify-content-center">
-                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+            <!-- <div class="all-speakers">
+            </div> -->
+        </div>
+    </section>
 
-                        <div class="single-speaker">
-                            <div class="top-content">
-                                <div class="image">
-                                    <img alt="#" src="assets/images/speakers/angela_dai.webp"
-                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
-                                </div>
-                                <ul class="social">
-                                    <li class="home">
-                                        <a href="https://www.professoren.tum.de/en/dai-angela">
-                                            <i class="lni lni-home">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="https://twitter.com/angelaqdai?lang=en">
-                                            <i class="lni lni-twitter-original">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li class="scholar">
-                                        <a href="https://scholar.google.com/citations?user=g-tGztMAAAAJ&hl=en">
-                                            <i class="lni lni-google"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="name">
-                                <h3><a href="https://www.professoren.tum.de/en/dai-angela">Angela Dai</a></h3>
-                                <span>Assistant Professor</span>
-                                <span>Technical University of Munich</span>
-                            </div>
+    <section class="schedule section" id="schedule-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2 class="wow fadeInUp">Workshop Schedule</h2>
+                        <div class="section-text-content">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="event">Event</th>
+                                        <th class="date">Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Paper submission deadline</th>
+                                        <td>November 24th AoE</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Notification to authors</th>
+                                        <td>December 1st AoE</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Camera-ready deadline</th>
+                                        <td>December 8th AoE</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Workshop date</th>
+                                        <td>XXXX</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
                         </div>
                     </div>
-
-
-                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-
-                        <div class="single-speaker">
-                            <div class="top-content">
-                                <div class="image">
-                                    <img alt="#" src="assets/images/speakers/katerina_fragkiadaki.webp"
-                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
-                                </div>
-                                <ul class="social">
-                                    <li class="home">
-                                        <a href="https://www.cs.cmu.edu/~katef/">
-                                            <i class="lni lni-home">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/katerina-fragkiadaki-9790a029/">
-                                            <i class="lni lni-linkedin-original">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li class="scholar">
-                                        <a href="https://scholar.google.com/citations?user=FWp7728AAAAJ&hl=en">
-                                            <i class="lni lni-google"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="name">
-                                <h3><a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></h3>
-                                <span>Assistant Professor</span>
-                                <span>Carnegie Mellon University</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-
-                        <div class="single-speaker">
-                            <div class="top-content">
-                                <div class="image">
-                                    <img alt="#" src="assets/images/speakers/srinath_sridhar.webp"
-                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
-                                </div>
-                                <ul class="social">
-                                    <li class="home">
-                                        <a href="https://cs.brown.edu/people/ssrinath/">
-                                            <i class="lni lni-home">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="https://twitter.com/drsrinathsridha">
-                                            <i class="lni lni-twitter-original">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li class="scholar">
-                                        <a href="https://scholar.google.com/citations?user=qIvZT74AAAAJ">
-                                            <i class="lni lni-google"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="name">
-                                <h3><a href="https://cs.brown.edu/people/ssrinath/">Srinath Sridhar</a></h3>
-                                <span>Assistant Professor</span>
-                                <span>Brown University</span>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="row text-center justify-content-center">
-                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-
-                        <div class="single-speaker">
-                            <div class="top-content">
-                                <div class="image">
-                                    <img alt="#" src="assets/images/speakers/minhyuk_sung.webp"
-                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
-                                </div>
-                                <ul class="social">
-                                    <li class="home">
-                                        <a href="https://mhsung.github.io/">
-                                            <i class="lni lni-home">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="https://twitter.com/MinhyukSung">
-                                            <i class="lni lni-twitter-original">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li class="scholar">
-                                        <a href="https://scholar.google.com/citations?user=PcIYMp4AAAAJ&hl=en">
-                                            <i class="lni lni-google"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="name">
-                                <h3><a href="https://mhsung.github.io/">Minhyuk Sung</a></h3>
-                                <span>Assistant Professor</span>
-                                <span>KAIST</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-
-                        <div class="single-speaker">
-                            <div class="top-content">
-                                <div class="image">
-                                    <img alt="#" src="assets/images/speakers/andrea_vedaldi.webp"
-                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
-                                </div>
-                                <ul class="social">
-                                    <li class="home">
-                                        <a href="https://www.robots.ox.ac.uk/~vedaldi/">
-                                            <i class="lni lni-home">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="https://twitter.com/Oxford_VGG">
-                                            <i class="lni lni-twitter-original">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li class="scholar">
-                                        <a href="https://scholar.google.com/citations?user=bRT7t28AAAAJ&hl=en">
-                                            <i class="lni lni-google"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="name">
-                                <h3><a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a></h3>
-                                <span>Professor</span>
-                                <span>University of Oxford</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-
-                        <div class="single-speaker">
-                            <div class="top-content">
-                                <div class="image">
-                                    <img alt="#" src="assets/images/speakers/xiaojuan_qi.webp"
-                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
-                                </div>
-                                <ul class="social">
-                                    <li class="home">
-                                        <a href="https://xjqi.github.io/">
-                                            <i class="lni lni-home">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="https://twitter.com/qi_xiaojuan">
-                                            <i class="lni lni-twitter-original">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li class="scholar">
-                                        <a href="https://scholar.google.com/citations?user=bGn0uacAAAAJ&hl=en">
-                                            <i class="lni lni-google"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="name">
-                                <h3><a href="https://xjqi.github.io/">Xiaojuan Qi</a></h3>
-                                <span>Assistant Professor</span>
-                                <span>University of Hong Kong</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-
-                        <div class="single-speaker">
-                            <div class="top-content">
-                                <div class="image">
-                                    <img alt="#" src="assets/images/speakers/jiajun_wu.webp"
-                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
-                                </div>
-                                <ul class="social">
-                                    <li class="home">
-                                        <a href="https://jiajunwu.com/">
-                                            <i class="lni lni-home">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="https://twitter.com/jiajunwu_cs">
-                                            <i class="lni lni-twitter-original">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li class="scholar">
-                                        <a href="https://scholar.google.com/citations?user=2efgcS0AAAAJ&hl=en&oi=ao">
-                                            <i class="lni lni-google"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="name">
-                                <h3><a href="https://jiajunwu.com/">Jiajun Wu</a></h3>
-                                <span>Assistant Professor</span>
-                                <span>Stanford University</span>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>
-    <!-- End Speaker Area -->
 
-    <!-- Start Workshop Organizers Area -->
     <section class="speakers organizers section" id="organizers-section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h3 class="wow zoomIn" data-wow-delay=".2s"
-                            style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">Organizers</h3>
                         <h2 class="wow fadeInUp" data-wow-delay=".4s"
                             style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Workshop
                             Organizers</h2>
@@ -616,7 +418,8 @@
                                 </div>
                             </div>
                             <div class="name">
-                                <h3><a href="https://faculty.engineering.asu.edu/yezhouyang/">Francisco Barranco</a></h3>
+                                <h3><a href="https://faculty.engineering.asu.edu/yezhouyang/">Francisco Barranco</a>
+                                </h3>
                                 <span>Arizona State University</span>
                             </div>
                         </div>
@@ -628,9 +431,7 @@
             </div>
         </div>
     </section>
-    <!-- End Speaker Area -->
 
-    <!-- Start Footer Action Area -->
     <section class="call-action overlay">
         <div class="container">
             <div class="row align-items-center">
@@ -638,14 +439,13 @@
                     <div class="inner-content">
                         <div class="text">
                             <p class="wow fadeInUp" data-wow-delay=".6s">For any question or support, please reach <a
-                                    href="mailto:habib.slim@kaust.edu.sa">@Habib.S</a>. </p>
+                                    href="mailto:eventbasedvision@gmail.com">eventbasedvision@gmail.com</a>. </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Footer Action Area -->
 
     <!-- ========================= scroll-top ========================= -->
     <a href="#" class="scroll-top">
