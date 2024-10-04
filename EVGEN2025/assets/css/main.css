@@ -2253,7 +2253,7 @@ ol {
 .hero-area {
   position: relative;
   background-color: var(--primary-color);
-  padding: 164px 0 64px 0;
+  padding: 164px 0 114px 0;
   /* padding-bottom: 240px; */
 }
 
@@ -2443,11 +2443,11 @@ ol {
 
 .count-down .box-head {
   position: relative;
-  margin-top: -100px;
-  border: 1px solid rgba(238, 238, 238, 0.219);
+  margin-top: -50px;
+  border: 1px solid #ff6c6cd2;
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.507);
-  padding: 2px;
+  background-color: #ff6c6cd2;
+  padding: 3px;
   -webkit-box-shadow: 0px 0px 30px #00000017;
   box-shadow: 0px 0px 30px #00000017;
   z-index: 2;
@@ -2471,29 +2471,30 @@ ol {
 
 .count-down .box-content {
   text-align: center;
-  background-color: #3813c2;
+  background-color: #eaeaea;
   background-image: url("../images/count-down/bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  padding: 60px 50px;
+  padding: 20px 20px;
   z-index: 2;
   border-radius: 10px;
   overflow: hidden;
 }
 
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .count-down .box-content {
-    padding: 30px 30px;
-    border-radius: 6px;
+    padding: 20px 20px;
+    border-radius: 4px;
   }
 }
 
 @media (max-width: 767px) {
   .count-down .box-content {
-    padding: 20px 20px;
-    border-radius: 4px;
+    padding: 10px 10px;
+    border-radius: 2px;
   }
 }
 
@@ -2533,13 +2534,13 @@ ol {
 .count-down .box-content .box::before {
   position: absolute;
   content: "";
-  right: -3.5px;
+  right: -1.5px;
   top: 50%;
-  height: 7px;
-  width: 7px;
-  background-color: #fff;
+  height: 3px;
+  width: 3px;
+  background-color: #727277;
   border-radius: 50%;
-  margin-top: -7px;
+  margin-top: -3px;
 }
 
 @media (max-width: 767px) {
@@ -2554,13 +2555,13 @@ ol {
 .count-down .box-content .box::after {
   position: absolute;
   content: "";
-  right: -3.5px;
+  right: -1.5px;
   top: 50%;
-  height: 7px;
-  width: 7px;
-  background-color: #fff;
+  height: 3px;
+  width: 3px;
+  background-color: #727272;
   border-radius: 50%;
-  margin-top: 7px;
+  margin-top: 3px;
 }
 
 @media (max-width: 767px) {
@@ -3606,4 +3607,9 @@ ol {
 
 .topic-name {
   font-weight: bold;
+}
+
+#count-down-text{
+  margin-bottom: 0.5em;
+  color:#ff6c6c;
 }

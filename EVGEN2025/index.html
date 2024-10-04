@@ -143,12 +143,15 @@
 
 
     <!-- Start Count Down Area -->
-    <!-- <div class="count-down">
+    <div class="count-down">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
+            <div class="row" style="height: 0;">
+                <div class="offset-lg-3 col-lg-6">
                     <div class="box-head">
                         <div class="box-content">
+
+                        <p id="count-down-text">Paper Submission Deadline in</p>
+                        <div> 
                             <div class="box">
                                 <span id="days">000</span>
                                 <span id="daystxt">Days</span>
@@ -166,15 +169,16 @@
                                 <span id="secondstxt">Secondes</span>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- End Count Down Area -->
 
     <!-- Start Accepted Papers Area -->
-    <section class="intro section" id="main-section">
+    <section class="intro section" id="main-section" style="padding-top: 114px;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -650,7 +654,7 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/hero-anim.js"></script>
     <script>
-        const finaleDate = new Date("June 18, 2024 09:00:00").getTime();
+        const finaleDate = new Date("November 24, 2024 09:00:00").getTime();
 
         const timer = () => {
             const now = new Date().getTime();
