@@ -1,150 +1,154 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	  
-		<meta charset="utf-8">
-		<meta name="description" content="SEVD: Synthetic Event-based Vision Dataset for Ego and Fixed Traffic Perception">
-		<meta name="keywords" content="SEVD">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta property="og:image" content="media/SEVD/SEVD_teaser.png">
-		<meta property="og:url" content="https://eventbasedvision.github.io/SEVD/">
-		<meta property="og:description" content="Synthetic Event-based Vision Dataset for Ego and Fixed Traffic Perception" >
-		  
-		<title>
-			SEVD
-		</title>
-		  
-		<!--<link rel="icon" type="image/png" href="media/openscene/logo.png">-->
-		<link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
-		<link rel="stylesheet" href="./media/SEVD/css/bulma.min.css">
-		<link rel="stylesheet" href="./media/SEVD/css/bulma-carousel.min.css">
-		<link rel="stylesheet" href="./media/SEVD/css/bulma-slider.min.css">
-		<link rel="stylesheet" href="./media/SEVD/css/fontawesome.all.min.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-		<link rel="stylesheet" href="./media/SEVD/css/index.css">
+<head>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script defer src="./media/SEVD/js/fontawesome.all.min.js"></script>
-		<script src="./media/SEVD/js/bulma-carousel.min.js"></script>
-		<script src="./media/SEVD/js/bulma-slider.min.js"></script>
-		<script src="./media/SEVD/js/index.js"></script>
-		
-	</head>
+	<meta charset="utf-8">
+	<meta name="description" content="SEVD: Synthetic Event-based Vision Dataset for Ego and Fixed Traffic Perception">
+	<meta name="keywords" content="SEVD">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:image" content="media/SEVD/SEVD_teaser.png">
+	<meta property="og:url" content="https://eventbasedvision.github.io/SEVD/">
+	<meta property="og:description" content="Synthetic Event-based Vision Dataset for Ego and Fixed Traffic Perception">
+
+	<title>
+		SEVD
+	</title>
+
+	<!--<link rel="icon" type="image/png" href="media/openscene/logo.png">-->
+	<link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+	<link rel="stylesheet" href="./media/SEVD/css/bulma.min.css">
+	<link rel="stylesheet" href="./media/SEVD/css/bulma-carousel.min.css">
+	<link rel="stylesheet" href="./media/SEVD/css/bulma-slider.min.css">
+	<link rel="stylesheet" href="./media/SEVD/css/fontawesome.all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+	<link rel="stylesheet" href="./media/SEVD/css/index.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="./media/SEVD/js/fontawesome.all.min.js"></script>
+	<script src="./media/SEVD/js/bulma-carousel.min.js"></script>
+	<script src="./media/SEVD/js/bulma-slider.min.js"></script>
+	<script src="./media/SEVD/js/index.js"></script>
+
+</head>
 
 
-	<body>
+<body>
 
-		<nav class="navbar" role="navigation" aria-label="main navigation">
-			<div class="navbar-brand">
-				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-				  <span aria-hidden="true"></span>
-				  <span aria-hidden="true"></span>
-				  <span aria-hidden="true"></span>
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
+
+
+		<div class="navbar-menu">
+			<div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+				<a class="navbar-item" href="https://eventbasedvision.github.io/">
+					<span class="icon">
+						<i class="fas fa-home"></i>
+					</span>
 				</a>
-			</div>
-	  
-	  
-			<div class="navbar-menu">
-				<div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-					<a class="navbar-item" href="https://eventbasedvision.github.io/">
-						<span class="icon">
-							<i class="fas fa-home"></i>
-						</span>
+
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a class="navbar-link">
+						More Research
 					</a>
 
-					<div class="navbar-item has-dropdown is-hoverable">
-						<a class="navbar-link">
-							More Research
+					<div class="navbar-dropdown">
+						<a class="navbar-item" href="https://eventbasedvision.github.io/eTraM/" target="_blank">
+							eTraM - CVPR 2024
 						</a>
-						
-						<div class="navbar-dropdown">
-							<a class="navbar-item" href="https://eventbasedvision.github.io/eTraM/" target="_blank">
-								eTraM - CVPR 2024
-							</a>
-						</div>
 					</div>
 				</div>
 			</div>
-		</nav>
+		</div>
+	</nav>
 
-		
-		<section class="hero">
-			<div class="hero-body">
-				<div class="container is-max-desktop">
+
+	<section class="hero">
+		<div class="hero-body">
+			<div class="container is-max-desktop">
+				<div class="column has-text-centered">
+
+					<h1 class="title is-2 publication-title">
+						SEVD: Synthetic Event-based Vision Dataset for Ego and Fixed Traffic Perception
+					</h1>
+
+					<div class="column is-full_width">
+						<h2 class="title is-4">CVPR 2024 Workshop on Synthetic Data for Computer Vision</h2>
+					</div>
+
+					<div class="is-size-5 publication-authors">
+
+						<span class="author-block">
+							<a href="https://github.com/manideep-17">Manideep Reddy Aliminati</a><sup>*
+							</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span>
+
+						<span class="author-block">
+							<a href="https://chakravarthi589.github.io/">Bharatesh
+								Chakravarthi</a><sup>*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span>
+
+						<span class="author-block">
+							<a href="https://github.com/aayush-v">Aayush Atul Verma</a>
+						</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						<span class="author-block">
+							<a href="https://github.com/arpitvaghela">Arpitsinh Vaghela</a>
+						</span><br>
+
+						<span class="author-block">
+							<a href="https://www.public.asu.edu/~hwei27/">Hua Wei</a>
+						</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						<span class="author-block">
+							<a href="https://search.asu.edu/profile/2182101">Xuesong Zhou</a>
+						</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						<span class="author-block">
+							<a href="https://faculty.engineering.asu.edu/yezhouyang/">Yezhou Yang</a>
+						</span>
+
+						<br>
+						<div class="is-size-6 publication-authors">
+							<span class="author-block">
+								(* Equal Contribution)
+							</span>
+						</div>
+
+					</div>
+
+
+					<div class="is-size-4 publication-authors">
+						<span class="author-block">
+							<b> Arizona State University <b>
+						</span>
+					</div>
+
 					<div class="column has-text-centered">
-											
-						<h1 class="title is-2 publication-title">
-							SEVD: Synthetic Event-based Vision Dataset for Ego and Fixed Traffic Perception
-						</h1>
-						
-						<div class="column is-full_width">
-							<h2 class="title is-4">CVPR 2024 Workshop on Synthetic Data for Computer Vision</h2>
-						</div>
-						
-						<div class="is-size-5 publication-authors">
-						
-							<span class="author-block">
-								<a href="https://github.com/manideep-17">Manideep Reddy Aliminati</a><sup>* </sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<div class="publication-links">
+
+							<span class="link-block">
+								<a href="https://arxiv.org/abs/2404.10540" target="_blank"
+									class="button is-normal is-rounded is-dark">
+
+									<span class="icon">
+										<i class="fas fa-file-pdf"></i>
+									</span>
+
+									<span>
+										Paper
+									</span>
+
+								</a>
 							</span>
-							
-							<span class="author-block">
-								<a href="https://chakravarthi589.github.io/">Bharatesh Chakravarthi</a><sup>*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							</span>
-							
-							<span class="author-block">
-								<a href="https://github.com/aayush-v">Aayush Atul Verma</a>
-							</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-														
-							<span class="author-block">
-								<a href="https://github.com/arpitvaghela">Arpitsinh Vaghela</a>
-							</span><br> 
-						
-							<span class="author-block">
-								<a href="https://www.public.asu.edu/~hwei27/">Hua Wei</a>
-							</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							
-							<span class="author-block">
-								<a href="https://search.asu.edu/profile/2182101">Xuesong Zhou</a>
-							</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							
-							<span class="author-block">
-								<a href="https://faculty.engineering.asu.edu/yezhouyang/">Yezhou Yang</a>
-							</span>
-							
-							<br>
-							<div class="is-size-6 publication-authors">
-								<span class="author-block">
-									(* Equal Contribution)
-								</span>
-							</div>
-							
-						</div>
-						
-						
-						<div class="is-size-4 publication-authors">
-							<span class="author-block">
-								<b> Arizona State University <b>
-							</span>
-						</div>
-						
-						<div class="column has-text-centered">
-							<div class="publication-links">
-								
-								<span class="link-block">
-									<a href="https://arxiv.org/abs/2404.10540" target="_blank" class="button is-normal is-rounded is-dark">
-										
-										<span class="icon">
-											<i class="fas fa-file-pdf"></i>
-										</span>
-										
-										<span>
-											Paper
-										</span>
-										
-									</a>
-								</span>
-								
+
 							<!--<span class="link-block">
 									<a href="https://arxiv.org/abs/2011.12948" class="external-link button is-normal is-rounded is-dark">
 										<span class="icon">
@@ -156,7 +160,7 @@
 										</span>
 									</a>
 								</span>-->
-								
+
 							<!--<span class="link-block">
 									<a href="xxx" target="_blank" class="button is-normal is-rounded is-dark">
 										<span class="icon">
@@ -168,211 +172,230 @@
 										</span>
 									</a>
 								</span>-->
-								
-								<span class="link-block">
-									<a href="https://github.com/eventbasedvision/SEVD" target="_blank" class="external-link button is-normal is-rounded is-dark">
-										
-										<span class="icon">
-											<i class="fab fa-github"></i>
-										</span>
-										
-										<span >
-											Code
-										</span>
-									</a>
-								</span>
-								
-								<span class="link-block">
-									<a href="#" class="external-link button is-normal is-rounded is-dark" target="_blank">
-										
-										<span class="icon">
-											<i class="far fa-images"></i>
-										</span>
-										
-										<span>
-											Data
-										</span>
-									</a>
-								</span>
-								
-								
-							
-								
-								<span class="link-block">
-									<a href="#" class="external-link button is-normal is-rounded is-dark">
-										
-										<span class="icon">
-											<i class="fab fa-youtube"></i>
-										</span>
-										
-										<span>
-											Video
-										</span>
-									</a>
-								</span>
-								
-								<span class="link-block">
-									<a href="#" class="external-link button is-normal is-rounded is-dark" target="_blank">
-									
-										<span class="icon">
-											<i class="fas fa-palette"></i>
-										</span>
-										
-										<span>
-											Poster
-										</span>
-									</a>
-								</span>
-								
-							</div>
+
+							<span class="link-block">
+								<a href="https://github.com/eventbasedvision/SEVD" target="_blank"
+									class="external-link button is-normal is-rounded is-dark">
+
+									<span class="icon">
+										<i class="fab fa-github"></i>
+									</span>
+
+									<span>
+										Code
+									</span>
+								</a>
+							</span>
+
+							<span class="link-block">
+								<a href="https://docs.google.com/forms/d/e/1FAIpQLSdOhlegSlpzW78DsPSqNCDdfg7IVXsbcKD-BgBnbj_YdjojQg/viewform?usp=sf_link"
+									class="external-link button is-normal is-rounded is-dark" target="_blank">
+
+									<span class="icon">
+										<i class="far fa-images"></i>
+									</span>
+
+									<span>
+										Data
+									</span>
+								</a>
+							</span>
+
+
+
+
+							<span class="link-block">
+								<a href="#teaservideo" class="external-link button is-normal is-rounded is-dark">
+
+									<span class="icon">
+										<i class="fab fa-youtube"></i>
+									</span>
+
+									<span>
+										Video
+									</span>
+								</a>
+							</span>
+
+							<!-- <span class="link-block">
+								<a href="#" class="external-link button is-normal is-rounded is-dark" target="_blank">
+
+									<span class="icon">
+										<i class="fas fa-palette"></i>
+									</span>
+
+									<span>
+										Poster
+									</span>
+								</a>
+							</span> -->
+
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		
-		<section class="hero teaser">
-			<div class="container is-max-desktop">
-				<div class="hero-body">
-					<img src="media/SEVD/SEVD_teaser.png" class="center"/><br><br>
-						<h2 class="subtitle has-text-centered">
-						  <strong>SEVD</strong> is a synthetic dataset from CARLA, offering multi-view ego and fixed perception data from dynamic vision sensors. 
-						   Data sequences are recorded across diverse lighting, weather conditions with domain shifts, and scenes featuring various classes of 
-						   objects. Alongside event data, SEVD includes RGB imagery, depth maps, optical flow, semantic, and instance segmentation, facilitating 
-						   a comprehensive understanding of the scene.
-						</h2>
-				</div>
-			</div>
-		</section>
-		
-		<section class="hero teaser">
-			<div class="container is-max-desktop">
-				<div class="hero-body">
-					<center>
-						
-						<h3 class="title is-3">Teaser Video</h3>
-				
-						<video width="700" controls align="center">
-							<source src="/blog/videos/abc.mp4" type="video/mp4">
-						</video>
-						
-					</center>
-				</div>
-			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="hero teaser">
-			<div class="container is-max-desktop">
-				<div class="columns is-centered has-text-centered">
-					<div class="column is-four-fifths">
-						<h2 class="title is-3">Abstract</h2>
-							<div class="content has-text-justified">
-								<p>
-									Recently, event-based vision sensors have gained attention for autonomous driving applications, as conventional RGB cameras face 
-									limitations in handling challenging dynamic conditions. However, the availability of real-world and synthetic event-based vision 
-									datasets remains limited. In response to this gap, we present SEVD, a first-of-its-kind multi-view ego, and fixed perception synthetic 
-									event-based dataset using multiple dynamic vision sensors within the CARLA simulator. Data sequences are recorded across diverse 
-									lighting (noon, nighttime, twilight) and weather conditions (clear, cloudy, wet, rainy, foggy) with domain shifts (discrete and continuous). 
-									SEVD spans urban, suburban, rural, and highway scenes featuring various classes of objects (car, truck, van, bicycle, motorcycle, and pedestrian). 
-									Alongside event data, SEVD includes RGB imagery, depth maps, optical flow, semantic, and instance segmentation, facilitating a comprehensive 
-									understanding of the scene. Furthermore, we evaluate the dataset using state-of-the-art event-based (RED, RVT) and frame-based (YOLOv8) 
-									methods for traffic participant detection tasks and provide baseline benchmarks for assessment. Additionally, we conduct experiments to assess 
-									the synthetic event-based dataset's generalization capabilities.
-								</p>
-							</div>
+	<section id="teaservideo" class="hero teaser">
+		<div class="container is-max-desktop">
+			<div class="hero-body">
+				<img src="media/SEVD/SEVD_teaser.png" class="center" /><br><br>
+				<h2 class="subtitle has-text-centered">
+					<strong>SEVD</strong> is a synthetic dataset from CARLA, offering multi-view ego and fixed
+					perception data from dynamic vision sensors.
+					Data sequences are recorded across diverse lighting, weather conditions with domain shifts, and
+					scenes featuring various classes of
+					objects. Alongside event data, SEVD includes RGB imagery, depth maps, optical flow, semantic, and
+					instance segmentation, facilitating
+					a comprehensive understanding of the scene.
+				</h2>
+			</div>
+		</div>
+	</section>
+
+	<section class="hero teaser">
+		<div class="container is-max-desktop">
+			<div class="hero-body">
+				<center>
+
+					<h3 class="title is-3">Teaser Video</h3>
+
+					<iframe width="700" height="400" src="https://www.youtube.com/embed/HjRohn-Dccc" frameborder="0"
+						allowfullscreen></iframe>
+
+				</center>
+			</div>
+		</div>
+	</section>
+
+	<section class="hero teaser">
+		<div class="container is-max-desktop">
+			<div class="columns is-centered has-text-centered">
+				<div class="column is-four-fifths">
+					<h2 class="title is-3">Abstract</h2>
+					<div class="content has-text-justified">
+						<p>
+							Recently, event-based vision sensors have gained attention for autonomous driving
+							applications, as conventional RGB cameras face
+							limitations in handling challenging dynamic conditions. However, the availability of
+							real-world and synthetic event-based vision
+							datasets remains limited. In response to this gap, we present SEVD, a first-of-its-kind
+							multi-view ego, and fixed perception synthetic
+							event-based dataset using multiple dynamic vision sensors within the CARLA simulator. Data
+							sequences are recorded across diverse
+							lighting (noon, nighttime, twilight) and weather conditions (clear, cloudy, wet, rainy,
+							foggy) with domain shifts (discrete and continuous).
+							SEVD spans urban, suburban, rural, and highway scenes featuring various classes of objects
+							(car, truck, van, bicycle, motorcycle, and pedestrian).
+							Alongside event data, SEVD includes RGB imagery, depth maps, optical flow, semantic, and
+							instance segmentation, facilitating a comprehensive
+							understanding of the scene. Furthermore, we evaluate the dataset using state-of-the-art
+							event-based (RED, RVT) and frame-based (YOLOv8)
+							methods for traffic participant detection tasks and provide baseline benchmarks for
+							assessment. Additionally, we conduct experiments to assess
+							the synthetic event-based dataset's generalization capabilities.
+						</p>
 					</div>
 				</div>
-    
 			</div>
-		</section>
-		
-		<section class="hero teaser">
-			<div class="container is-max-desktop">
- 
-				<div class="columns is-centered has-text-centered">
-					<div class="column is-four-fifths">
-						<hr>
-						<h2 class="title is-3">SEVD - Multiview & Multimodality </h2>
-						<img src="media/SEVD/SEVD_Ego_Multiview_MultiModality.png" class="center"/>
-							<div class="content has-text-justified">
-								<br>  
-								<p>
-									The SEVD sensor suite comprises a strategically positioned array of sensors of each type 
-									(event, RGB, depth, optical flow, semantic, and instance). In ego scenarios, the cameras offer 
-									coverage from front to rear, including front-right, front-left, rear-right, and rear-left perspectives, 
-									each with overlapping FoV providing a comprehensive 360<sup>o</sup> view. Notably, the rear camera 
-									features a wider 110<sup>o</sup> FoV, while the others have a 70<sup>o</sup> FoV.
-								</p>
-							</div>
+
+		</div>
+	</section>
+
+	<section class="hero teaser">
+		<div class="container is-max-desktop">
+
+			<div class="columns is-centered has-text-centered">
+				<div class="column is-four-fifths">
+					<hr>
+					<h2 class="title is-3">SEVD - Multiview & Multimodality </h2>
+					<img src="media/SEVD/SEVD_Ego_Multiview_MultiModality.png" class="center" />
+					<div class="content has-text-justified">
+						<br>
+						<p>
+							The SEVD sensor suite comprises a strategically positioned array of sensors of each type
+							(event, RGB, depth, optical flow, semantic, and instance). In ego scenarios, the cameras
+							offer
+							coverage from front to rear, including front-right, front-left, rear-right, and rear-left
+							perspectives,
+							each with overlapping FoV providing a comprehensive 360<sup>o</sup> view. Notably, the rear
+							camera
+							features a wider 110<sup>o</sup> FoV, while the others have a 70<sup>o</sup> FoV.
+						</p>
 					</div>
 				</div>
-				<hr>
 			</div>
-		</section>
-		
-		
-		<section class="hero teaser">
-			<div class="container is-max-desktop">
- 
-				<div class="columns is-centered has-text-centered">
-					<div class="column is-four-fifths">
-						
-						<h2 class="title is-3">SEVD - Settings and Stats </h2>
-						<img src="media/SEVD/SEVD_Stats.png" class="center"/>
-							<div class="content has-text-justified">
-								<br>  
-								<p>
-									SEVD offers a diverse range of recordings featuring various combinations of 
-									scenes (urban, suburban, rural, and highway), weather (clear, cloudy, wet, rainy, foggy), 
-									and lighting conditions (noon, nighttime, twilight).
-									Each recording spans durations of 2 to 30 mins. SEVD provide a total of 27 hrs of fixed
-									and 31 hrs of ego perception event data collectively. Similarly, SEVD offer an equal volume 
-									of data from other sensor types, resulting in a cumulative 162 hrs of fixed and 186 hrs
-									of ego perception data.
-									SEVD comprises extensive annotations, including 2D and 3D bounding boxes for six categories (car, truck, bus,
-									bicycle, motorcycle, and pedestrian) of traffic participants, totaling approximately 9M bounding boxes, with cars being
-									the most prevalent category.
-																
-								</p>
-							</div>
+			<hr>
+		</div>
+	</section>
+
+
+	<section class="hero teaser">
+		<div class="container is-max-desktop">
+
+			<div class="columns is-centered has-text-centered">
+				<div class="column is-four-fifths">
+
+					<h2 class="title is-3">SEVD - Settings and Stats </h2>
+					<img src="media/SEVD/SEVD_Stats.png" class="center" />
+					<div class="content has-text-justified">
+						<br>
+						<p>
+							SEVD offers a diverse range of recordings featuring various combinations of
+							scenes (urban, suburban, rural, and highway), weather (clear, cloudy, wet, rainy, foggy),
+							and lighting conditions (noon, nighttime, twilight).
+							Each recording spans durations of 2 to 30 mins. SEVD provide a total of 27 hrs of fixed
+							and 31 hrs of ego perception event data collectively. Similarly, SEVD offer an equal volume
+							of data from other sensor types, resulting in a cumulative 162 hrs of fixed and 186 hrs
+							of ego perception data.
+							SEVD comprises extensive annotations, including 2D and 3D bounding boxes for six categories
+							(car, truck, bus,
+							bicycle, motorcycle, and pedestrian) of traffic participants, totaling approximately 9M
+							bounding boxes, with cars being
+							the most prevalent category.
+
+						</p>
 					</div>
 				</div>
-				<hr>
 			</div>
-		</section>
-		
-		<section class="hero teaser">
-			<div class="container is-max-desktop">
-				<div class="hero-body">
-					<center>
-						
-						<h3 class="title is-3">Data Samples</h3>
-				
-						<video width="700" controls align="center">
-							<source src="/blog/videos/abc.mp4" type="video/mp4">
-						</video>
-						
-					</center>
-				</div>
-				<hr>
+			<hr>
+		</div>
+	</section>
+
+	<section class="hero teaser">
+		<div class="container is-max-desktop">
+			<div class="hero-body">
+				<center>
+
+					<h3 class="title is-3">Data Samples</h3>
+
+					<iframe width="700" height="400" src="https://www.youtube.com/embed/oru9te7xeno" frameborder="0"
+						allowfullscreen></iframe>
+					<iframe width="700" height="400" src="https://www.youtube.com/embed/sI4bRNEbnDg" frameborder="0"
+						allowfullscreen></iframe>
+
+				</center>
 			</div>
-		</section>
-				
-		<section class="hero teaser" id="BibTeX">
+			<hr>
+		</div>
+	</section>
+
+	<section class="hero teaser" id="BibTeX">
 		<div class="container is-max-desktop content">
-		<center>
-			<h2 class="title">BibTeX</h2>
-		</center>
+			<center>
+				<h2 class="title">BibTeX</h2>
+			</center>
 			<pre><code>@article{aliminati2024sevd,
   title={SEVD: Synthetic Event-based Vision Dataset for Ego and Fixed Traffic Perception},
   author={Aliminati, Manideep Reddy and Chakravarthi, Bharatesh and Verma, Aayush Atul and Vaghela, Arpitsinh and Wei, Hua and Zhou, Xuesong and Yang, Yezhou},
   journal={arXiv preprint arXiv:2404.10540},
   year={2024}
 }</code></pre>
-		 </div>
-		</section>
+		</div>
+	</section>
 
-		<!--<section class="section" id="Acknowledgements">
+	<!--<section class="section" id="Acknowledgements">
 		  <div class="container is-max-desktop content">
 			<h2 class="title">Acknowledgements</h2>
 			We sincerely thank Golnaz Ghiasi for providing guidance of using OpenSeg model. We also thank Huizhong Chen, Yin Cui, Tom Deurig, Dan Gnanapragasam, Xiuye Gu, Leonidas Guibas,
@@ -382,28 +405,33 @@
 		</section>-->
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <center> <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-            This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. 
-            We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template.
-          </p></center>
-        </div>
-      </div>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+	<footer class="footer">
+		<div class="container">
+			<div class="content has-text-centered">
+			</div>
+			<div class="columns is-centered">
+				<div class="column is-8">
+					<div class="content">
+						<center>
+							<p>
+								This website is licensed under a <a rel="license"
+									href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+									Commons Attribution-ShareAlike 4.0 International License</a>.
+								This webpage template is from <a
+									href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+								We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and
+								open-sourcing this template.
+							</p>
+						</center>
+					</div>
+				</div>
+				</p>
+			</div>
+		</div>
+		</div>
+		</div>
+	</footer>
 
 </body>
+
 </html>
