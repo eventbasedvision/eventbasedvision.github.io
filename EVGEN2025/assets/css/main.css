@@ -22,13 +22,11 @@ body {
   font-style: normal;
   color: #727272;
   overflow-x: hidden;
-  font-size: 15px;
 }
 
 p {
   margin: 0;
   padding: 0;
-  font-size: 15px;
   line-height: 24px;
 }
 
@@ -1226,14 +1224,12 @@ ol {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-title h3 {
-    font-size: 15px;
     margin-bottom: 16px;
   }
 }
 
 @media (max-width: 767px) {
   .section-title h3 {
-    font-size: 15px;
     margin-bottom: 14px;
   }
 }
@@ -1291,7 +1287,6 @@ ol {
 }
 
 .section-title p {
-  font-size: 15px;
   line-height: 26px;
 }
 
@@ -1475,7 +1470,6 @@ ol {
 .button .btn {
   display: inline-block;
   text-transform: capitalize;
-  font-size: 15px;
   font-weight: 500;
   padding: 15px 30px;
   background-color: #3813c2;
@@ -1968,7 +1962,6 @@ ol {
 }
 
 .navbar-nav .nav-item a {
-  font-size: 15px;
   color: #fff;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
@@ -2265,7 +2258,6 @@ ol {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/hero/hero-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2279,7 +2271,6 @@ ol {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/hero/hero-fg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2335,7 +2326,6 @@ ol {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area .hero-content h5 {
-    font-size: 15px;
     margin-bottom: 12px;
   }
 }
@@ -2353,7 +2343,7 @@ ol {
 }
 
 .hero-area .hero-content h2 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 40px;
   line-height: 55px;
   color: #fff;
@@ -2387,7 +2377,6 @@ ol {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area .hero-content p {
     margin: 18px 0;
-    font-size: 15px;
     line-height: 26px;
   }
 }
@@ -2395,7 +2384,6 @@ ol {
 @media (max-width: 767px) {
   .hero-area .hero-content p {
     margin: 20px 0;
-    font-size: 15px;
     line-height: 23px;
   }
 }
@@ -2472,7 +2460,6 @@ ol {
 .count-down .box-content {
   text-align: center;
   background-color: #eaeaea;
-  background-image: url("../images/count-down/bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2503,7 +2490,6 @@ ol {
   left: 0;
   top: 0;
   content: "";
-  background: url(../images/count-down/left-shape.png) no-repeat;
   height: 100%;
   width: 100%;
   background-position: center;
@@ -2516,7 +2502,6 @@ ol {
   right: 0;
   top: 0;
   content: "";
-  background: url(../images/count-down/right-shape.png) no-repeat;
   height: 100%;
   width: 100%;
   background-position: center;
@@ -2658,7 +2643,6 @@ ol {
     Call To Action CSS
 ========================================*/
 .call-action {
-  background-image: url("../images/call-action/call-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2888,7 +2872,6 @@ ol {
 .footer .single-footer.f-about p {
   color: #727272;
   margin-top: 25px;
-  font-size: 15px;
   line-height: 26px;
 }
 
@@ -2939,7 +2922,6 @@ ol {
 }
 
 .footer .single-footer.f-link li a {
-  font-size: 15px;
   font-weight: 400;
   color: #727272;
   position: relative;
@@ -3068,7 +3050,6 @@ ol {
 
 .footer .copyright .copyright-text {
   color: #727272;
-  font-size: 15px;
   margin: 0;
 }
 
@@ -3150,7 +3131,6 @@ ol {
   text-align: center;
   color: #fff;
   background-color: #3813c2;
-  font-size: 15px;
   border-radius: 4px;
 }
 
@@ -3612,4 +3592,12 @@ ol {
 #count-down-text{
   margin-bottom: 0.5em;
   color:#ff6c6c;
+}
+
+span.bolder{
+  font-weight: 800;
+}
+
+img.img-people{
+  border: solid 1px #000;
 }
