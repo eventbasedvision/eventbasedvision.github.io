@@ -2019,6 +2019,11 @@ ol {
   transition: all 0.4s ease;
 }
 
+.navbar-nav .nav-item a.btn:hover::after {
+  width: 0%;
+}
+
+/* remove hover effect if nav is a btn */
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
 }
