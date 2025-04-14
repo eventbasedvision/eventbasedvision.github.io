@@ -3606,3 +3606,61 @@ span.bolder{
 img.img-people{
   border: solid 1px #000;
 }
+
+/* Image Slider Styles */
+.image-slider {
+    padding: 50px 0;
+}
+
+.tiny-slider {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.tiny-slider-inner {
+    display: flex;
+    overflow: hidden;
+}
+
+.slider-item {
+    padding: 10px;
+}
+
+.slider-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain; /* show full image without cropping */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #f4f4f4; /* optional: gives a nice background if image doesn't fill the box */
+}
+
+
+.slider-item img:hover {
+    transform: scale(1.02);
+}
+
+.tns-nav {
+  /* width: 1500px; */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tns-nav button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tns-nav button.tns-nav-active {
+    background: var(--primary-color);
+    transform: scale(1.2);
+}
+
