@@ -8,3 +8,7 @@
 # SEVD
 
 [SEVD](https://eventbasedvision.github.io/SEVD)
+
+# SEPose
+
+[SEPose](https://eventbasedvision.github.io/SEPose)
