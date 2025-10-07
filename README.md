@@ -1,5 +1,5 @@
 # EVGEN Workshop
-[EVGEN 2026](https://eventbasedvision.github.io/EVGEN2026)
+[EVGEN 2026](https://eventbasedvision.github.io/EVGEN2026) <br>
 [EVGEN 2025](https://eventbasedvision.github.io/EVGEN2025)
 
 # eTraM
