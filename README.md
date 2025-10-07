@@ -1,4 +1,4 @@
-# EVGEN 2025 Workshop
+# EVGEN Workshop
 [EVGEN 2025](https://eventbasedvision.github.io/EVGEN2025)
 
 # eTraM
@@ -12,3 +12,4 @@
 # SEPose
 
 [SEPose](https://eventbasedvision.github.io/SEPose)
+
