@@ -3669,3 +3669,61 @@ img.img-people{
   z-index: 2000;
 }
 
+/* 1) Make sure dropdown isn't clipped by ancestors */
+.header, .navbar-area, .nav-inner {
+  /* allow positioned children to overflow the navbar */
+  overflow: visible !important;
+}
+
+/* 2) Ensure dropdown sits on top and has readable colors */
+.navbar .dropdown-menu {
+  position: absolute;      /* should be positioned relative to nearest positioned ancestor */
+  top: 100%;               /* immediately below the nav link */
+  left: 0;                 /* adjust via transform if you want centered */
+  min-width: 200px;        /* sensible minimum */
+  z-index: 2000 !important;/* above most elements */
+  background-color: #ffffff;    /* visible background */
+  color: #212529;              /* readable text color */
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* 3) Dropdown item text color and hover */
+.navbar .dropdown-menu .dropdown-item {
+  color: #212529;
+  padding: .5rem 1rem;
+}
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus {
+  background-color: #f1f3f5;
+  color: #000;
+}
+
+/* 4) Optional: prevent tiny underline/caret from conflicting or hide if undesired */
+/* If you want to hide the small caret/underline under "Previous Workshop": */
+.nav-link.dropdown-toggle::after {
+  /* Either style it so it's visible, or hide it */
+  display: inline-block; /* default shows caret; to hide: use display: none; */
+  color: #fff;           /* change color if caret is visible but matches background */
+}
+
+/* Example: hide caret if it looks odd on your design */
+.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+/* 5) On small screens ensure menu is positioned properly (optional) */
+@media (max-width: 991px) {
+  .navbar .dropdown-menu {
+    position: static; /* bootstrap default behavior inside collapsed menu */
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+  }
+  .navbar .dropdown-menu .dropdown-item {
+    background-color: transparent;
+    color: inherit;
+  }
+}
+
+
