@@ -3664,3 +3664,8 @@ img.img-people{
     transform: scale(1.2);
 }
 
+/* Make dropdown appear above other elements */
+.navbar .dropdown-menu {
+  z-index: 2000;
+}
+
