@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="eGSMV: Event-based Graph Representation with Spatial and Motion Vectors for Asynchronous Object Detection">
+    <meta name="keywords" content="eGSMV, event-based vision, graph neural networks">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="media/eGSMV/eGSMV_teaser.png">
+    <meta property="og:url" content="https://eventbasedvision.github.io/eGSMV/">
+    <meta property="og:description" content="Event-based Graph Representation with Spatial and Motion Vectors for Asynchronous Object Detection">
+
+    <title>
+      eGSMV
+    </title>
+
+    <!--<link rel="icon" type="image/png" href="media/eGSMV/eGSMV_icon.png">-->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <!-- Reuse eTraM styling from the neighboring project -->
+    <link rel="stylesheet" href="../eTraM/media/eTraM/css/bulma.min.css">
+    <link rel="stylesheet" href="../eTraM/media/eTraM/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="../eTraM/media/eTraM/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="../eTraM/media/eTraM/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="../eTraM/media/eTraM/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="../eTraM/media/eTraM/js/fontawesome.all.min.js"></script>
+    <script src="../eTraM/media/eTraM/js/bulma-carousel.min.js"></script>
+    <script src="../eTraM/media/eTraM/js/bulma-slider.min.js"></script>
+    <script src="../eTraM/media/eTraM/js/index.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+          <a class="navbar-item" href="https://eventbasedvision.github.io/" target="_blank">
+            <span class="icon">
+              <i class="fas fa-home"></i>
+            </span>
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More Research
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://eventbasedvision.github.io/eTraM/" target="_blank">
+                eTraM - CVPR 2024
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">
+              Event-based Graph Representation with Spatial and Motion Vectors for Asynchronous Object Detection
+            </h1>
+
+            <div class="is-size-3 publication-authors">
+              <h3 class="title is-3">WACV 2026</h3>
+            </div>
+
+            <div class="is-size-5 publication-authors" style="margin-top: 1rem;">
+              <span class="author-block">
+                <a href="https://aayush-v.github.io" target="_blank">Aayush Atul Verma</a>
+              </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://github.com/arpitvaghela" target="_blank">Arpitsinh Vaghela</a>
+              </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://chakravarthi589.github.io/" target="_blank">Bharatesh Chakravarthi</a>
+              </span><br>
+              <span class="author-block">
+                <a href="https://github.com/Kaustav97" target="_blank">Kaustav Chanda</a>
+              </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://faculty.engineering.asu.edu/yezhouyang/" target="_blank">Yezhou Yang</a>
+              </span>
+            </div>
+
+            <div class="is-size-4 publication-authors" style="margin-top: 1rem;">
+              <span class="author-block">
+                <b>Arizona State University</b>
+              </span>
+            </div>
+
+            <div class="column has-text-centered" style="margin-top: 1.5rem;">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://openaccess.thecvf.com/content/WACV2026/papers/Verma_Event-based_Graph_Representation_with_Spatial_and_Motion_Vectors_for_Asynchronous_WACV_2026_paper.pdf"
+                     target="_blank"
+                     class="button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>
+                      Paper
+                    </span>
+                  </a>
+                </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <!-- Placeholder teaser image for eGSMV -->
+          <img src="media/figure01.pdf" class="center" alt="eGSMV teaser figure (placeholder)"/>
+          <h2 class="subtitles has-text-centered">
+            <strong>eGSMV</strong> is a spatiotemporal multigraph framework for event-based object detection that models
+            raw event streams with separate spatial and temporal neighborhoods, enabling efficient asynchronous inference
+            while preserving sparsity and temporal granularity.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Event-based sensors offer high temporal resolution and low latency by generating sparse, asynchronous data.
+                However, converting this irregular data into dense tensors for standard neural networks diminishes these
+                advantages and increases computational cost. In this work, we propose <strong>eGSMV</strong>, a novel
+                spatiotemporal multigraph representation that constructs two decoupled graphs: a spatial graph leveraging
+                B-spline basis functions to model global structure, and a temporal graph utilizing motion vector-based
+                attention for local dynamic changes. This design enables efficient 2D kernels in place of expensive 3D
+                kernels while preserving the sparsity and asynchrony of events.
+              </p>
+              <p>
+                We evaluate eGSMV on the Gen1 automotive and eTraM datasets for event-based object detection, achieving
+                over a 6% improvement in accuracy compared to previous graph-based methods, with a 5× speedup, reduced
+                parameter count, and no increase in computational cost. These results highlight the effectiveness of
+                structured graph modeling for asynchronous vision and demonstrate that explicitly modeling spatial and
+                temporal neighborhoods is key to high-performance event-based detection.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <hr>
+            <h2 class="title is-3">Spatiotemporal Multigraph Architecture</h2>
+            <!-- Placeholder architecture image -->
+            <img src="media/figure02.pdf" class="center" alt="eGSMV architecture diagram (placeholder)"/>
+            <div class="content has-text-justified">
+              <br>
+              <p>
+                eGSMV represents each event as a node in a 3D spatiotemporal space and builds a multigraph with
+                independent spatial and temporal neighborhoods. The <strong>Spatial Structure Learning (SSL)</strong>
+                branch uses anisotropic 2D spline kernels over an ellipsoidal neighborhood to capture local spatial
+                structure without resorting to dense 3D convolutions. The <strong>Motion Vector Learning (MVL)</strong>
+                branch aggregates temporal neighbors with motion-vector edge features and GATv2-based attention to model
+                velocity and brightness changes over time.
+              </p>
+              <p>
+                Features from SSL and MVL are fused via lightweight concatenation and an MLP, yielding rich
+                spatiotemporal descriptors while maintaining low computational overhead. An event-level detection head
+                operates directly on the sparse node representations, predicting class probabilities and bounding boxes
+                per event without constructing dense grids, enabling fully asynchronous and sparse end-to-end inference.
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Results on Gen1 and eTraM</h2>
+            <!-- Placeholder results / comparison image -->
+            <img src="media/results.png" class="center" alt="Quantitative results and comparisons (placeholder)"/>
+            <div class="content has-text-justified">
+              <br>
+              <p>
+                On the Gen1 automotive dataset, eGSMV improves mean Average Precision (mAP) by over 6% compared to
+                prior graph-based approaches while using significantly fewer parameters and lower per-event MFLOPs.
+                Relative to asynchronous graph baselines such as AEGNN and DAGr, eGSMV achieves higher accuracy with
+                comparable or reduced computational cost, benefiting from its 2D kernel design and explicit separation
+                of spatial and temporal neighborhoods.
+              </p>
+              <p>
+                On the eTraM event-based traffic monitoring dataset, eGSMV similarly outperforms asynchronous methods
+                and narrows the gap to dense, frequency-based detectors, demonstrating strong generalization across
+                different viewpoints and event statistics. These findings underscore the importance of structured
+                spatiotemporal graph modeling for efficient, real-time event-based detection.
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+
+    <section class="hero teaser" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <center>
+          <h2 class="title">BibTeX</h2>
+        </center>
+        <pre><code>@InProceedings{Verma_2026_WACV,
+            author    = {Verma, Aayush Atul and Vaghela, Arpitsinh and Chakravarthi, Bharatesh and Chanda, Kaustav and Yang, Yezhou},
+            title     = {Event-based Graph Representation with Spatial and Motion Vectors for Asynchronous Object Detection},
+            booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+            month     = {March},
+            year      = {2026},
+            pages     = {3781-3791}
+        }</code></pre>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <center>
+                <p>
+                  This website is licensed under a
+                  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                    Commons Attribution-ShareAlike 4.0 International License</a>.
+                  This webpage template is adapted from
+                  <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+                  We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template.
+                </p>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
